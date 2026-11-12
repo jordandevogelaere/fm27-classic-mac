@@ -1,0 +1,23 @@
+/* Use a single inset for all entry points into the hub. */
+#ReportBody > #FMBC_CompetitionsLink_NewsCompetitionHubSite_06d1fcac,
+#ReportBody > #FMBC_CompetitionsLink_NewsCompetitionHubSite_2f2b5654,
+#ReportBody > #FMBC_MessagesLink_NewsCompetitionHubSite_9dbaa016,
+#ReportBody > #FMBC_MessagesLink_NewsCompetitionHubSite_fe009a58,
+#ReportBody > #NewsCompetitionHubSite {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    height: auto;
+    min-height: 0;
+    margin-bottom: 0;
+}
+
+/* A tall competition card has a standings table, a key, then Top Performers.
+   The shorter table-only cards use a different vertical margin class. */
+.fmb092-grid-16896e427e396b #Frame.siblock-border > BindingRemapper > TemplateContainer.base-template-grow.margin-top-global-gap-regular {
+    max-height: 448px;
+    min-height: 0;
+    flex-shrink: 1;
+}

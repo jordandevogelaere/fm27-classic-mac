@@ -1,0 +1,32 @@
+/* Full-height native page; give the active desktop row the single Club Profile inset. */
+#ReportBody > #MyCareerMyContractCard,
+#MyCareerMyContractCard .fmb-career-page049 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#ContractSmallRow,
+#ContractStandardRow,
+#ContractLargeRow {
+    margin-bottom: 10px;
+}
+
+/* The four-cell sidebar leaves one 10-unit gutter after its tiles. */
+#ContractLargeSidebar,
+#ContractStandardSidebar,
+#ContractSmallSidebar {
+    translate: 10px 0;
+}
+
+/* Suppress the decorative outer frame, leaving the contract and tile outlines. */
+#MyCareerMyContractCard #Card-frame > #Border.figma-base-tool-template-border {
+    display: none;
+}

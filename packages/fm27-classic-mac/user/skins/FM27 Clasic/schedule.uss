@@ -1,0 +1,106 @@
+/* Schedule: one 10px inset, owned by the page rather than a grid row. */
+#ReportBody > #CalendarTool,
+#ReportBody > #CalendarToolFixturesTab {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    margin: 0;
+    padding: 0;
+}
+#ReportBody > #CalendarTool .fmb-calendar051,
+#ReportBody > #CalendarToolFixturesTab .fmb-calendar051 {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    width: auto;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    margin: 0;
+    padding: 0;
+}
+.fmb-calendar051 #NonPhoneLayout,
+.fmb-calendar051 #Card-frame > #GridSafeArea,
+.fmb-calendar051 #GridSafeArea > #TabbedGridLayoutElement {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    min-height: 0;
+    padding-bottom: 0;
+}
+.fmb-calendar051 #GridSafeArea > #TabbedGridLayoutElement FixedAspectGridLayoutElement,
+.fmb-calendar051 #GridSafeArea > #TabbedGridLayoutElement .grid-content-wrapper,
+.fmb-calendar051 #GridSafeArea > #TabbedGridLayoutElement #GridLayoutElementContent,
+.fmb-calendar051 #GridSafeArea > #TabbedGridLayoutElement FixedAspectGridLayoutElement > .unity-scroll-view,
+.fmb-calendar051 #GridSafeArea > #TabbedGridLayoutElement FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-and-vertical-scroll-container,
+.fmb-calendar051 #GridSafeArea > #TabbedGridLayoutElement FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-and-vertical-scroll-container > .unity-scroll-view__content-viewport,
+.fmb-calendar051 #GridSafeArea > #TabbedGridLayoutElement FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-and-vertical-scroll-container > .unity-scroll-view__content-viewport > .unity-scroll-view__content-container,
+.fmb-calendar051 #GridSafeArea > #TabbedGridLayoutElement FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-viewport,
+.fmb-calendar051 #GridSafeArea > #TabbedGridLayoutElement FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-viewport > .unity-scroll-view__content-container,
+.fmb-calendar051 #GridLayoutElementContent > #CalendarGeneral {
+    min-height: 100%;
+}
+.fmb-calendar051 #CalendarGeneral .calendar-max-res.margin-bottom-global-gap-regular,
+.fmb-calendar051 #CalendarGeneral .calendar-standard-res.margin-bottom-global-gap-regular,
+.fmb-calendar051 #CalendarGeneral .calendar-min-res.margin-bottom-global-gap-regular {
+    margin-bottom: 0;
+}
+
+/* Monthly calendar: neutral surfaces and a distinct amber current-day header. */
+.fmb-calendar051 #CalendarGeneral .calendar-grid {
+    background-color: #292929;
+    border-color: #3B3B3B;
+    border-width: 1px;
+    border-radius: 4px;
+}
+.fmb-calendar051 #CalendarGeneral .calendar-day-general {
+    border-color: #3B3B3B;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+}
+.fmb-calendar051 #CalendarGeneral .calendar-day-future {
+    background-color: #2D2D2D;
+}
+.fmb-calendar051 #CalendarGeneral .calendar-day-passed {
+    background-color: #252525;
+}
+.fmb-calendar051 #CalendarGeneral .calendar-day-passed .calendar-day-future {
+    background-color: transparent;
+}
+.fmb-calendar051 #CalendarGeneral .calendar-day-current {
+    background-color: #373229;
+}
+.fmb-calendar051 #CalendarGeneral .calendar-day-header {
+    background-color: #292929;
+}
+.fmb-calendar051 #CalendarGeneral .calendar-header-gradient {
+    display: none;
+}
+.fmb-calendar051 #CalendarGeneral .calendar-day-current .calendar-day-header {
+    background-color: #FFB52E;
+}
+.fmb-calendar051 #CalendarGeneral .calendar-day-current .calendar-day-header .calendar-day-text,
+.fmb-calendar051 #CalendarGeneral .calendar-day-current .calendar-day-header #text {
+    color: #202020;
+}
+.fmb-calendar051 #CalendarGeneral .calendar-day-passed .calendar-day-body {
+    opacity: 0.8;
+}
+.fmb-calendar051 #CalendarGeneral .calendar-day-passed .calendar-event-list,
+.fmb-calendar051 #CalendarGeneral .calendar-day-passed .calendar-event .fixture-background-border {
+    opacity: 1;
+}
+.fmb-calendar051 #CalendarGeneral .calendar-event-border {
+    border-color: #3B3B3B;
+}
+.fmb-calendar051 #CalendarGeneral .calendar-event-border.tile-default-background {
+    background-color: #252525;
+}

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<record><boolean id="preload" value="false" /><list id="maps"><record from="africa" to="graphics/pictures/continent/1/logo" /><record from="asia" to="graphics/pictures/continent/2/logo" /><record from="europe" to="graphics/pictures/continent/3/logo" /><record from="north america" to="graphics/pictures/continent/4/logo" /><record from="oceania" to="graphics/pictures/continent/5/logo" /><record from="south america" to="graphics/pictures/continent/6/logo" /><record from="world" to="graphics/pictures/continent/7/logo" /></list></record>

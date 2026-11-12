@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "name": "FM24 Test",
+  "author": "Jordan",
+  "version": "0.0.1",
+  "description": "Throwaway toolchain test: one obvious colour change.",
+  "includes": [
+    "styles"
+  ]
+}

@@ -1,0 +1,117 @@
+/* Main menu only. Leave the full tile button as the click target. */
+#intro-panel #MainMenuStartNewCareerShuffleDraft .tile-title-frame,
+#intro-panel #MainMenuStartNewCareerNationalTeam .tile-title-frame {
+    height: 34px;
+    min-height: 34px;
+    max-height: 34px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 68px;
+}
+
+#intro-panel #MainMenuStartNewCareerShuffleDraft #title-text,
+#intro-panel #MainMenuStartNewCareerNationalTeam #title-text {
+    font-size: 16px;
+}
+
+#intro-panel #MainMenuStartNewCareerShuffleDraft #Description,
+#intro-panel #MainMenuStartNewCareerShuffleDraft #SubDescription,
+#intro-panel #MainMenuStartNewCareerNationalTeam #description,
+#intro-panel #MainMenuStartNewCareerShuffleDraft #Button #text,
+#intro-panel #MainMenuStartNewCareerNationalTeam #Button #text {
+    font-size: 12px;
+}
+
+/* The national-team illustration is absolute in both tile sizes. Its native
+   width and height are inline, so cap both dimensions in the same ratio.
+   The right margin on the content reserves a separate area for the image. */
+#intro-panel #MainMenuStartNewCareerNationalTeam #ManagerImage {
+    max-width: 46px;
+    max-height: 52px;
+    margin-right: 8px;
+}
+
+#intro-panel #MainMenuStartNewCareerNationalTeam #tile-templates-4x2-template-4,
+#intro-panel #MainMenuStartNewCareerNationalTeam #tile-templates-4x4-template {
+    margin-right: 62px;
+    min-width: 0;
+}
+
+#intro-panel #MainMenuStartNewCareerNationalTeam #description {
+    max-width: 100%;
+}
+
+/* The short Shuffle Draft tile already gives the copy its own column.
+   Keep its logo on the right; the square variant keeps the logo below the text. */
+#intro-panel #MainMenuStartNewCareerShuffleDraft .shuffle-draft-logo {
+    width: 52px;
+    max-width: 52px;
+    height: 42px;
+    max-height: 42px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    background-size: contain;
+}
+
+#intro-panel #MainMenuStartNewCareerShuffleDraft .shuffle-draft-logo.right-0 {
+    margin-right: 8px;
+}
+
+/* Keep the small button chevrons in proportion with their labels. */
+#intro-panel #MainMenuStartNewCareerShuffleDraft #Button .ui-concepts-chevron-right_small,
+#intro-panel #MainMenuStartNewCareerNationalTeam #Button .ui-concepts-chevron-right_small {
+    width: 10px;
+    max-width: 10px;
+    height: 10px;
+    max-height: 10px;
+}
+
+
+/* Meeting views can open above an existing Home page or as a full-screen card. */
+#PressConferenceCard > #ElementBindingRoot,
+#PressConferenceDynamicCard > #ElementBindingRoot,
+#PressConferenceSingleQuestionDynamicCard > #ElementBindingRoot,
+.fullscreen-meeting-with-larger-speakto,
+.simeeting-container {
+    background-color: #292929;
+}
+
+/* The native panel contains the question and the scrolling journalist list. */
+.frame-states-full-screen-press-conference-template-start > .flex-1-0-0 {
+    background-color: #2f3033;
+    border-color: #424348;
+    border-width: 1px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.frame-states-full-screen-press-conference-template-start #TopBar.meetings-statement-container {
+    background-color: #343539;
+}
+.frame-states-full-screen-press-conference-template-start #Journalists .meeting-tiles-base {
+    background-color: #292b31;
+    border-color: #45474e;
+}
+
+/* The four decorative outline glyphs belong to the main navigation bar. */
+.fullscreen-experience-header .main-navigation-button #FMB066ArrowBacking {
+    display: none;
+}
+.fullscreen-experience-header .main-navigation-button SIButton#BackButton,
+.fullscreen-experience-header .main-navigation-button SIButton#ForwardButton {
+    align-items: center;
+    justify-content: center;
+}
+.fullscreen-experience-header .main-navigation-button .fmb-history-chevron049 {
+    width: 18px;
+    height: 18px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-repeat: no-repeat;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+/* Personal change: hide the FMBLOG logo in the sidebar header (keeps its space so the collapse button stays put). */
+#FMBClassicBrand,
+#FMBClassicBrand #FMBBrandButton {
+    visibility: hidden;
+}

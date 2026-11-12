@@ -1,0 +1,119 @@
+/* Dynamics: gaps belong to group wrappers, outside the visible card borders. */
+.fmb-social-scroll #SIVisible_CoreSocialGroup,
+.fmb-social-scroll #SIVisible_SecondarySocialGroupA,
+.fmb-social-scroll #SIVisible_SecondarySocialGroupB {
+    margin-bottom: 8px;
+}
+
+/* Tactic option dialogue: keep the icon, stripe and wrapping text in one column. */
+.fmb-instruction-detail053 #description-and-feedback {
+    min-width: 0;
+    overflow: hidden;
+}
+.fmb-instruction-detail053 #staff-feedback,
+.fmb-instruction-detail053 #staff-feedback #pro-con-list,
+.fmb-instruction-detail053 #pro-con-list #item-root,
+.fmb-instruction-detail053 #pro-con-list #staff-feedback-list-item {
+    align-self: stretch;
+    width: auto;
+    min-width: 0;
+    max-width: 100%;
+    flex-shrink: 1;
+}
+.fmb-instruction-detail053 #pro-con-list #item-root,
+.fmb-instruction-detail053 #pro-con-list #staff-feedback-list-item {
+    overflow: hidden;
+}
+.fmb-instruction-detail053 #pro-con-list #PlusMinusIconColour {
+    flex-shrink: 0;
+}
+.fmb-instruction-detail053 #pro-con-list #pro-con-text {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    min-width: 0;
+    max-width: 100%;
+    height: auto;
+    white-space: normal;
+    -unity-text-align: middle-left;
+}
+.fmb-instruction-detail053 #selected-tactic-desc {
+    min-width: 0;
+    max-width: 100%;
+    white-space: normal;
+}
+
+/* MenuBody supplies the outside 10px. The tactics panel uses its full height. */
+#MenuBody > #TacticalPlannerTool,
+#MenuBody > #TacticalPlannerRoot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    min-height: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#TacticCreated #Card-frame > #GridSafeArea {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    min-height: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#TacticCreated #GridSafeArea > #GridLayout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+}
+/* Only the outer grid should fill its viewport. Keep the squad table scrollable. */
+#TacticCreated #GridLayout > FixedAspectGridLayoutElement,
+#TacticCreated #GridLayout .grid-content-wrapper,
+#TacticCreated #GridLayout FixedAspectGridLayoutElement > .unity-scroll-view,
+#TacticCreated #GridLayout FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-and-vertical-scroll-container,
+#TacticCreated #GridLayout FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-and-vertical-scroll-container > .unity-scroll-view__content-viewport,
+#TacticCreated #GridLayout FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-and-vertical-scroll-container > .unity-scroll-view__content-viewport > .unity-scroll-view__content-container,
+#TacticCreated #GridLayout FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-viewport,
+#TacticCreated #GridLayout FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-viewport > .unity-scroll-view__content-container,
+#TacticCreated #GridLayout #GridLayoutElementContent {
+    min-height: 100%;
+}
+#TacticCreated #GridLayout #GridLayoutElementContent > #Body {
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+/* The inner instructions grid carries a native -20px bottom margin.
+   Offset it at its anchor. All three main cells run from the top of the same row. */
+#TacticCreated #UseDarkerHeaderIfFMC {
+    flex-grow: 1;
+    min-height: 0;
+}
+#TacticCreated #UseDarkerHeaderIfFMC > #TeamInstructionsTabGrid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    height: auto;
+    min-height: 0;
+}
+#TacticCreated #TeamInstructionsTabGrid .grid-content-wrapper,
+#TacticCreated #TeamInstructionsTabGrid #GridLayoutElementContent,
+#TacticCreated #TeamInstructionsTabGrid #GridLayoutElementContent > #TeamInstructionsPitch,
+#TacticCreated #TeamInstructionsTabGrid #GridLayoutElementContent > #TeamInstructionsBlock,
+#TacticCreated #TeamInstructionsTabGrid #GridLayoutElementContent > #PhasesAndTeamInstructions {
+    min-height: 100%;
+}

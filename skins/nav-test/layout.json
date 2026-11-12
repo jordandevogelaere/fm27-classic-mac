@@ -1,0 +1,20 @@
+[
+  {
+    "asset": "MenuBar",
+    "element": "ButtonGroup",
+    "has_class": "row-direction-normal",
+    "replace_class": [
+      "row-direction-normal",
+      "column-direction-normal"
+    ],
+    "inline_enum": {
+      "131083": "column",
+      "131102": "absolute"
+    },
+    "inline_px": {
+      "131089": -170,
+      "131104": 90,
+      "131105": 200
+    }
+  }
+]

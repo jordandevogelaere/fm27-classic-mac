@@ -1,0 +1,8 @@
+/* Toolchain test only. Deliberately garish so the effect is unmistakable.
+   Names and usage counts come from debug/uss-27.0.1. */
+:root {
+  --brand-theme-accent: #ff0000;       /* section headings, budget figures (was #da71fe) */
+  --brand-theme-ui-base: #ff0000;      /* active toggle buttons such as "Alle" (was #6e0fd7) */
+  --global-text-primary: #ffff00;      /* main text, 186 uses (was #ebebeb) */
+  --layout-modules-block-surface: #003300; /* panel fill, 172 uses (was #0d0e11bf) */
+}

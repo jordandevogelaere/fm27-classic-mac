@@ -1,0 +1,404 @@
+/* Each career page owns one outer inset within ReportBody. */
+#ReportBody > #SquadTargetsCard .fmb-career-page049,
+#ReportBody > #MyCareerMyRelationshipsCard .fmb-career-page049,
+#ReportBody > #MyCareerMyHistoryCard .fmb-career-page049,
+#ReportBody > #JobMarketReport .fmb-career-page049,
+#ReportBody > #NonPlayerReportCareerManagerialStatsTabbedCard .fmb-career-page049 {
+    margin-bottom: 10px;
+}
+
+/* Keep the native tabs and fill the viewport of the selected statistics grid. */
+.fmb092-grid-043c500ceb5f9c #Card-frame > #GridSafeArea,
+.fmb092-grid-043c500ceb5f9c #GridSafeArea > #TabbedGridLayoutElement {
+    flex-grow: 1;
+    flex-basis: 0;
+    min-height: 0;
+    padding-bottom: 0;
+}
+.fmb092-grid-043c500ceb5f9c #GridSafeArea > #TabbedGridLayoutElement FixedAspectGridLayoutElement,
+.fmb092-grid-043c500ceb5f9c #GridSafeArea > #TabbedGridLayoutElement .grid-content-wrapper,
+.fmb092-grid-043c500ceb5f9c #GridSafeArea > #TabbedGridLayoutElement #GridLayoutElementContent,
+.fmb092-grid-043c500ceb5f9c #GridSafeArea > #TabbedGridLayoutElement FixedAspectGridLayoutElement > .unity-scroll-view,
+.fmb092-grid-043c500ceb5f9c #GridSafeArea > #TabbedGridLayoutElement FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-and-vertical-scroll-container,
+.fmb092-grid-043c500ceb5f9c #GridSafeArea > #TabbedGridLayoutElement FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-and-vertical-scroll-container > .unity-scroll-view__content-viewport,
+.fmb092-grid-043c500ceb5f9c #GridSafeArea > #TabbedGridLayoutElement FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-and-vertical-scroll-container > .unity-scroll-view__content-viewport > .unity-scroll-view__content-container,
+.fmb092-grid-043c500ceb5f9c #GridSafeArea > #TabbedGridLayoutElement FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-viewport,
+.fmb092-grid-043c500ceb5f9c #GridSafeArea > #TabbedGridLayoutElement FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-viewport > .unity-scroll-view__content-container,
+.fmb092-grid-043c500ceb5f9c #GridSafeArea > #TabbedGridLayoutElement #GridLayoutElementContent > #NonPlayerReportCareerManagerialStats {
+    min-height: 100%;
+}
+
+/* Career statistics: align the tab and its underline with the first column heading. */
+.fmb092-grid-043c500ceb5f9c #TabbedGridLayoutElement .fmb-lower-tabs050-row {
+    padding-left: 13px;
+}
+
+/* Desktop dropdown tabs sit half a pixel below plain tabs. Move only their artwork. */
+#SecondaryNavigationBar #SecondaryTabDropdownButton .fmb065-tab-leading > .fmb065-tab-leading,
+#SecondaryNavigationBar #SecondaryTabDropdownButton .fmb065-tab-leading > .fmb-secondary-active-indicator {
+    translate: 0 -0.5px;
+}
+
+/* The Job Centre replacement label shares the metrics of its neighbouring native label. */
+#SecondaryNavigationBar #FMBJobLabel1015 > #FMBJobCentreLabel.fmb-job051-label.fmb-job051-true {
+    font-size: 13px;
+    padding-top: var(--global-padding-extra-small);
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+/* Let the native list keep its capacity and align the populated portion. */
+#SecondaryNavigationBar #BookmarksList #unity-content-container > #View {
+    margin-left: auto;
+}
+
+#ReportBody #CareerStatsCard #GridLayoutElementContent > #CareerStats {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+#CareerStatsCard .card-states-card-states-career-stats > #Frame > BindableSwitchElement {
+    flex-grow: 1;
+    min-height: 0;
+}
+
+#PersonBiographyCard .frames-biography-summary-state9 .unity-scroll-view #Frame,
+#PersonBiographyCard .frames-biography-summary-state9 .unity-scroll-view #Frame > #text,
+#PersonBiographyCard #block-biography #text {
+    flex-shrink: 0;
+    height: auto;
+    white-space: normal;
+}
+#PersonBiographyCard .frames-biography-summary-state9 .unity-scroll-view #Frame > .body-large-16px-bold {
+    margin-bottom: 12px;
+}
+#PersonBiographyCard #GridLayoutElementContent > #PersonBiography,
+#PersonBiographyCard #GridLayoutElementContent > #RetiredPlayerHistory {
+    min-height: 100%;
+    max-height: 100%;
+}
+
+#FMBC058InboxTransferHub #Fixtures .transfer-hub-story,
+#FMBC058InboxTransferHub #Fixtures .transfer-hub-story > ComponentElement {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    flex-shrink: 1;
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden;
+}
+#FMBC058InboxTransferHub #Fixtures #ListForNormalRes > BindingSetter {
+    flex-basis: 0;
+    min-width: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+#FMBC058InboxTransferHub #Fixtures #TransferStatusArea,
+#FMBC058InboxTransferHub #Fixtures #PersonBindingRemapper {
+    min-width: 0;
+    flex-shrink: 1;
+    overflow: hidden;
+}
+#FMBC058InboxTransferHub #Fixtures #PriceFrame {
+    flex-shrink: 0;
+}
+
+/* Reserve room for the native profile banner before the attribute grid. */
+#PlayerReport .fmb085-standard #ReportHeader,
+#PlayerReport .fmb085-small #ReportHeader,
+#PlayerReport .fmb085-standard #PlayerReportHeaderGradient,
+#PlayerReport .fmb085-small #PlayerReportHeaderGradient,
+#PlayerReport .fmb085-standard #PlayerReportHeaderSetter,
+#PlayerReport .fmb085-small #PlayerReportHeaderSetter,
+#PlayerReport .fmb085-standard #report-player-full-header-max,
+#PlayerReport .fmb085-small #report-player-full-header-max {
+    height: 102px;
+    min-height: 102px;
+    max-height: 102px;
+}
+#PlayerReport #report-player-banner-mid > .justify-content-space-between {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 38%;
+    min-width: 330px;
+    margin-right: 6px;
+}
+#PlayerReport #report-player-banner-mid > .justify-content-end {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    min-width: 0;
+}
+#PlayerReport #report-player-banner-mid > .justify-content-end > .align-items-center {
+    width: auto;
+    min-width: 0;
+    flex-shrink: 1;
+}
+#PlayerReport #report-player-banner-mid #FrameActions,
+#PlayerReport #report-player-banner-min #FrameActions,
+#PlayerReport #FrameActions > PluginContextMenuBindings {
+    min-width: 98px;
+    flex-shrink: 0;
+}
+#PlayerReport #FrameActions .sitext,
+#PlayerReport #report-player-banner-mid .white,
+#PlayerReport #report-player-banner-min #DatabaseID .sitext {
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+#PlayerReport #report-player-banner-mid .fm-universe-regular-18px {
+    white-space: nowrap;
+}
+#SecondaryNavigationBar #SecondaryTabsList #SecondaryTabDropdownButton .fmb065-tab-leading #DropdownArrow {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    flex-shrink: 0;
+    background-image: none;
+    width: 6px;
+    min-width: 6px;
+    max-width: 6px;
+    height: 6px;
+    min-height: 6px;
+    max-height: 6px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-right-color: white;
+    border-bottom-color: white;
+    rotate: 45deg;
+    margin-left: 5px;
+    margin-right: 4px;
+    margin-top: 0;
+}
+
+#SecondaryNavigationBar #BookmarksList .unity-scroll-view__content-container--horizontal {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+#SecondaryNavigationBar #BookmarksList .virtualised-list__view {
+    position: relative;
+    flex-shrink: 0;
+}
+#PlayerReport #report-player-banner-mid {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    height: 98px;
+    min-height: 98px;
+}
+#PlayerReport #report-player-banner-mid > .justify-content-space-between,
+#PlayerReport #report-player-banner-mid > .justify-content-end {
+    width: auto;
+    min-width: 0;
+    max-width: none;
+    align-self: stretch;
+    margin: 0;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+#PlayerReport #report-player-banner-mid > .justify-content-space-between {
+    height: 48px;
+    min-height: 48px;
+    justify-content: space-between;
+}
+#PlayerReport #report-player-banner-mid > .justify-content-end {
+    height: 44px;
+    min-height: 44px;
+    justify-content: flex-start;
+}
+#PlayerReport #report-player-banner-mid > .justify-content-end > #Frame {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    min-width: 0;
+    width: auto;
+    overflow: hidden;
+}
+#PlayerReport #report-player-banner-mid #FrameActions {
+    margin-right: 6px;
+}
+#PlayerReport .fmb085-standard #PersonPictureFrame {
+    width: 90px;
+    min-width: 90px;
+    height: 90px;
+    min-height: 90px;
+}
+#PlayerReport .fmb085-standard #PersonPictureFrame #PictureTeamRemapper,
+#PlayerReport .fmb085-standard #PersonPictureFrame #PersonPicture,
+#PlayerReport .fmb085-standard #PersonPictureFrame .fmb068-photo-inner,
+#PlayerReport .fmb085-standard #PersonPictureFrame #PersonImage {
+    width: 78px;
+    min-width: 78px;
+    height: 78px;
+    min-height: 78px;
+}
+
+/* At the standard breakpoint, keep identity, actions and the four
+   information groups side by side like the large player banner. */
+#PlayerReport #report-player-banner-mid {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 94px;
+    min-height: 94px;
+}
+#PlayerReport #report-player-banner-mid > .justify-content-space-between {
+    width: 320px;
+    min-width: 320px;
+    max-width: 320px;
+    flex-basis: 320px;
+    height: 84px;
+    min-height: 84px;
+    align-self: center;
+    margin-right: 9px;
+}
+#PlayerReport #report-player-banner-mid > .justify-content-space-between > #Frame {
+    width: 208px;
+    min-width: 208px;
+    max-width: 208px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding-bottom: 14px;
+}
+#PlayerReport #report-player-banner-mid .column-direction-normal.justify-content-center > #Frame > TemplateContainer {
+    position: absolute;
+    left: 0;
+    top: 47px;
+}
+#PlayerReport #report-player-banner-mid .column-direction-normal.justify-content-center > #Frame {
+    overflow: visible;
+}
+#PlayerReport #report-player-banner-mid > .justify-content-end {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    min-width: 0;
+    height: 68px;
+    min-height: 68px;
+    align-self: center;
+}
+#PlayerReport #report-player-banner-mid > .justify-content-end > #Frame {
+    flex-basis: 0;
+    min-width: 0;
+    align-self: center;
+}
+#PlayerReport .fmb085-standard #PlayerReportHeaderGradient #PersonPictureFrame {
+    width: 100px;
+    min-width: 100px;
+    max-width: 100px;
+    height: 94px;
+    min-height: 94px;
+    max-height: 94px;
+    align-self: flex-end;
+}
+#PlayerReport .fmb085-standard #PersonPictureFrame #PictureTeamRemapper,
+#PlayerReport .fmb085-standard #PersonPictureFrame #PersonPicture,
+#PlayerReport .fmb085-standard #PersonPictureFrame .fmb-person-root,
+#PlayerReport .fmb085-standard #PersonPictureFrame #FMBSocialMatch,
+#PlayerReport .fmb085-standard #PersonPictureFrame .fmb068-photo-inner,
+#PlayerReport .fmb085-standard #PersonPictureFrame #PersonImage {
+    width: 90px;
+    min-width: 90px;
+    max-width: 90px;
+    height: 90px;
+    min-height: 90px;
+    max-height: 90px;
+}
+
+#PlayerReport #PlayerAttributesBlock #attributes_row .fmb071-compact-label,
+#PlayerReport #PlayerAttributesBlock #attributes_row .fmb071-compact-label > VisualElement,
+#PlayerReport #PlayerAttributesBlock .fmb-attribute-label053,
+#PlayerReport #PlayerAttributesBlock .fmb-attribute-label053 > VisualElement {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+#PlayerReport #PlayerAttributesBlock #attributes_row .fmb071-compact-label #text,
+#PlayerReport #PlayerAttributesBlock .fmb-attribute-label053 #text {
+    align-self: stretch;
+    -unity-text-align: middle-left;
+    margin-left: 0;
+    padding-left: 0;
+}
+#PlayerReport #PlayerAttributesBlock #attributes_row .fmb071-compact-label {
+    margin-left: 2px;
+}
+#PlayerReport #report-player-banner-mid > .justify-content-end > .align-items-start {
+    min-width: 178px;
+    flex-shrink: 0;
+}
+#PlayerReport #report-player-banner-mid > .justify-content-end > .row-direction-normal.align-items-center {
+    min-width: 0;
+    max-width: 156px;
+    margin-right: 4px;
+}
+#PlayerReport #report-player-banner-mid #data_display-cell-standard-regular-1,
+#PlayerReport #report-player-banner-mid #data_display-cell-standard-regular-2 {
+    flex-shrink: 0;
+    margin-left: 0;
+    margin-right: 3px;
+}
+#PlayerReport #report-player-banner-mid #data_display-cell-standard-regular-1 #text,
+#PlayerReport #report-player-banner-mid #data_display-cell-standard-regular-2 #text {
+    font-size: 12px;
+    flex-shrink: 0;
+    white-space: nowrap;
+    overflow: visible;
+}
+#PlayerReport .fmb085-standard #PersonPictureFrame #PersonPicture #hasImage,
+#PlayerReport .fmb085-standard #PersonPictureFrame #PersonPicture #Person,
+#PlayerReport .fmb085-standard #PersonPictureFrame #PersonPicture #person-portrait,
+#PlayerReport .fmb085-standard #PersonPictureFrame #PersonPicture #PersonRatioFitter,
+#PlayerReport .fmb085-standard #PersonPictureFrame #PersonPicture #PersonImage {
+    min-width: 90px;
+    max-width: 90px;
+    min-height: 90px;
+    max-height: 90px;
+}
+
+#PlayerReport #report-player-banner-mid > .justify-content-end > #Frame.align-items-start {
+    width: 178px;
+    min-width: 178px;
+    max-width: 178px;
+    flex-basis: 178px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+#PlayerReport #report-player-banner-mid > .justify-content-end > #Frame.align-items-center {
+    min-width: 0;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-left: 0;
+    margin-right: 3px;
+}
+#PlayerReport .fmb085-standard #PlayerReportHeaderBindingExpect #PersonPictureFrame #PictureTeamRemapper #PersonPicture,
+#PlayerReport .fmb085-standard #PlayerReportHeaderBindingExpect #PersonPictureFrame #PictureTeamRemapper #PersonPicture * {
+    width: 88px;
+    min-width: 88px;
+    max-width: 88px;
+    height: 88px;
+    min-height: 88px;
+    max-height: 88px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Each editable grid stays inside its own flex slot when FM restores a choice. */
+#FMBPlayerPanelScroll { display: flex; flex-grow: 1; flex-basis: 0; min-height: 0; }
+#FMBPlayerPanelBoard { width: 100%; flex-direction: column; padding-bottom: 10px; }
+#FMBPlayerPanelBoard > .fmb-slot-row { flex-direction: row; flex-shrink: 0; margin-bottom: 10px; }
+#FMBPlayerRow0 { height: 446px; }
+#FMBPlayerRow1 { height: 280px; }
+#FMBPlayerRow2, #FMBPlayerRow3 { height: 144px; }
+#FMBPlayerPanelBoard .fmb-slot-holder { flex-grow: 1; flex-shrink: 1; flex-basis: 0; min-width: 0; min-height: 0; margin-right: 10px; overflow: hidden; }
+#FMBPlayerPanelBoard #FMBPlayerSlot00, #FMBPlayerPanelBoard #FMBPlayerSlot11, #FMBPlayerPanelBoard #FMBPlayerSlot23, #FMBPlayerPanelBoard #FMBPlayerSlot34 { margin-right: 0; }
+#FMBPlayerPanelBoard #FMBPlayerSlot11 { flex-grow: 3; }
+.fmb085-small #FMBPlayerSlot22, .fmb085-small #FMBPlayerSlot33, .fmb085-small #FMBPlayerSlot34, .fmb085-standard #FMBPlayerSlot34 { display: none; }
+.fmb085-small #FMBPlayerPanelBoard #FMBPlayerSlot32, .fmb085-standard #FMBPlayerPanelBoard #FMBPlayerSlot33 { margin-right: 0; }
+#FMBPlayerPanelBoard .fmb-independent-grid, #FMBPlayerPanelBoard .grid-content-wrapper, #FMBPlayerPanelBoard FixedAspectGridLayoutElement { width: 100%; height: 100%; min-width: 100%; min-height: 100%; flex-grow: 1; }
+#FMBPlayerPanelScroll #FMBPlayerPanelBoard .fmb-independent-grid #GridLayoutElementContent { min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; }
+#FMBPlayerPanelScroll #FMBPlayerPanelBoard .fmb-independent-grid #GridLayoutElementContent > .grid-element-scope { min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; margin: 0; padding: 0; translate: 0 0; }

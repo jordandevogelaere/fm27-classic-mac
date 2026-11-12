@@ -1,0 +1,12 @@
+/* For You and Around the World: match the unbordered News Home fixtures header. */
+.fmb092-grid-e44e0cff0f41b5 .fmb-news-header052.entity-background-header,
+.fmb092-grid-84dd36286b725f .fmb-news-header052.entity-background-header {
+    background-color: transparent;
+    border-bottom-width: 0;
+    border-bottom-color: transparent;
+}
+
+/* Risk Assessment: move the entire tab row, including its active underline. */
+.fmb-risk-assessment.fmb-lower-tabs050 #TabbedGridLayoutElement .fmb-lower-tabs050-row {
+    padding-left: 10px;
+}

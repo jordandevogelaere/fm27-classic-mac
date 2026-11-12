@@ -1,0 +1,196 @@
+/* The career entry panel belongs to MenuBody. The Home link opens a
+   separate ClubSite panel in ReportBody. Anchor the panel, then its content.
+   MenuBody has a 10 UI-pixel bottom margin in Classic. ReportBody has none. */
+#MenuBody > #PortalScreen,
+#ReportBody > #ClubSite {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    max-height: none;
+    min-height: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#MenuBody > #PortalScreen .fmb-fill053-PortalScreen,
+#ReportBody > #ClubSite .fmb056-ClubSite.fmb-career-page049 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    min-height: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Style setters and quick actions share a parent with the visible page.
+   Pin the content-bearing branch only. */
+#PortalScreen .fmb-fill053-PortalScreen > #FMBLargeGrid053,
+#PortalScreen #Overview > #Content,
+#PortalScreen #FMBHomeClub #HomeClubContext,
+#PortalScreen #HomeClubContext > #FMBLargeGrid053 > BindingVariables > TemplateContainer,
+#ClubSite .fmb056-ClubSite.fmb-career-page049 > #FMBLargeGrid053,
+#ClubSite #FMBLargeGrid053 > BindingVariables > .fmb092-grid-a9da45f0b7a1c1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    min-height: 0;
+}
+
+/* Leave the SIVisible binding in control of whether this club participates.
+   When visible it gets the whole area. Its empty unemployed sibling gets zero. */
+#PortalScreen #Content > #FMBHomeClub {
+    flex-basis: 100%;
+    height: 100%;
+    min-height: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+#PortalScreen #Content > #FMBFoundationState414 {
+    flex-basis: 0;
+    min-height: 0;
+}
+
+/* In both site templates the club header is followed by GridSafeArea.
+   Allocate the remainder to this area before any cell sizes are calculated. */
+#PortalScreen #HomeClubContext > #FMBLargeGrid053,
+#PortalScreen #HomeClubContext > #FMBLargeGrid053 > BindingVariables,
+#ClubSite #FMBLargeGrid053 > BindingVariables,
+#PortalScreen #HomeClubContext #Card-frame > #GridSafeArea,
+#ClubSite #Card-frame > #GridSafeArea {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    min-height: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* ClubSite uses a native, single-card grid. Its row calculation leaves a
+   partial row unused on taller windows. Size this outer grid only; the
+   footer and the scrollers inside its card must keep their native sizes. */
+#ClubSite #Card-frame > #GridSafeArea > #GridLayout,
+#PortalScreen #HomeClubContext #ClubHomeSmallSwitch > #GridLayout {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#ClubSite #GridSafeArea > #GridLayout > FixedAspectGridLayoutElement,
+#ClubSite #GridSafeArea > #GridLayout > .grid-content-wrapper,
+#ClubSite #GridSafeArea > #GridLayout > .grid-content-wrapper > FixedAspectGridLayoutElement,
+#ClubSite #GridSafeArea > #GridLayout > FixedAspectGridLayoutElement > .grid-content-wrapper,
+#PortalScreen #HomeClubContext #ClubHomeSmallSwitch > #GridLayout > FixedAspectGridLayoutElement,
+#PortalScreen #HomeClubContext #ClubHomeSmallSwitch > #GridLayout > .grid-content-wrapper,
+#PortalScreen #HomeClubContext #ClubHomeSmallSwitch > #GridLayout > .grid-content-wrapper > FixedAspectGridLayoutElement,
+#PortalScreen #HomeClubContext #ClubHomeSmallSwitch > #GridLayout > FixedAspectGridLayoutElement > .grid-content-wrapper {
+    min-height: 100%;
+    max-height: 100%;
+    align-self: stretch;
+}
+
+/* Only the single-card grid scrolls here. Stop at its own content container,
+   before the independently scrollable squad, news and transfers lists. */
+#ClubSite #GridSafeArea > #GridLayout > FixedAspectGridLayoutElement > .unity-scroll-view,
+#ClubSite #GridSafeArea > #GridLayout > .grid-content-wrapper > FixedAspectGridLayoutElement > .unity-scroll-view,
+#PortalScreen #HomeClubContext #ClubHomeSmallSwitch > #GridLayout > FixedAspectGridLayoutElement > .unity-scroll-view,
+#PortalScreen #HomeClubContext #ClubHomeSmallSwitch > #GridLayout > .grid-content-wrapper > FixedAspectGridLayoutElement > .unity-scroll-view,
+#ClubSite #GridSafeArea > #GridLayout > FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-and-vertical-scroll-container,
+#ClubSite #GridSafeArea > #GridLayout > .grid-content-wrapper > FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-and-vertical-scroll-container,
+#PortalScreen #HomeClubContext #ClubHomeSmallSwitch > #GridLayout > FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-and-vertical-scroll-container,
+#PortalScreen #HomeClubContext #ClubHomeSmallSwitch > #GridLayout > .grid-content-wrapper > FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-and-vertical-scroll-container,
+#ClubSite #GridSafeArea > #GridLayout > FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-viewport,
+#ClubSite #GridSafeArea > #GridLayout > FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-and-vertical-scroll-container > .unity-scroll-view__content-viewport,
+#ClubSite #GridSafeArea > #GridLayout > .grid-content-wrapper > FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-viewport,
+#ClubSite #GridSafeArea > #GridLayout > .grid-content-wrapper > FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-and-vertical-scroll-container > .unity-scroll-view__content-viewport,
+#PortalScreen #HomeClubContext #ClubHomeSmallSwitch > #GridLayout > FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-viewport,
+#PortalScreen #HomeClubContext #ClubHomeSmallSwitch > #GridLayout > FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-and-vertical-scroll-container > .unity-scroll-view__content-viewport,
+#PortalScreen #HomeClubContext #ClubHomeSmallSwitch > #GridLayout > .grid-content-wrapper > FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-viewport,
+#PortalScreen #HomeClubContext #ClubHomeSmallSwitch > #GridLayout > .grid-content-wrapper > FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-and-vertical-scroll-container > .unity-scroll-view__content-viewport,
+#ClubSite #GridSafeArea > #GridLayout > FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-viewport > .unity-scroll-view__content-container,
+#ClubSite #GridSafeArea > #GridLayout > FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-and-vertical-scroll-container > .unity-scroll-view__content-viewport > .unity-scroll-view__content-container,
+#ClubSite #GridSafeArea > #GridLayout > .grid-content-wrapper > FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-viewport > .unity-scroll-view__content-container,
+#ClubSite #GridSafeArea > #GridLayout > .grid-content-wrapper > FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-and-vertical-scroll-container > .unity-scroll-view__content-viewport > .unity-scroll-view__content-container,
+#PortalScreen #HomeClubContext #ClubHomeSmallSwitch > #GridLayout > FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-viewport > .unity-scroll-view__content-container,
+#PortalScreen #HomeClubContext #ClubHomeSmallSwitch > #GridLayout > FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-and-vertical-scroll-container > .unity-scroll-view__content-viewport > .unity-scroll-view__content-container,
+#PortalScreen #HomeClubContext #ClubHomeSmallSwitch > #GridLayout > .grid-content-wrapper > FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-viewport > .unity-scroll-view__content-container,
+#PortalScreen #HomeClubContext #ClubHomeSmallSwitch > #GridLayout > .grid-content-wrapper > FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-and-vertical-scroll-container > .unity-scroll-view__content-viewport > .unity-scroll-view__content-container {
+    min-height: 100%;
+}
+#ClubSite #GridLayout #GridLayoutElementContent > #ClubSiteBlock,
+#PortalScreen #HomeClubContext #GridLayout #GridLayoutElementContent > #ClubSiteBlock {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#ClubSite #BottomBarGridVisible,
+#ClubSite #BottomTiles,
+#PortalScreen #HomeClubContext #BottomBarGridVisible,
+#PortalScreen #HomeClubContext #BottomTiles {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* On Home only, cancel the extra native selection paint on the Dev. Centre
+   row. A real Dev. Centre page keeps the existing skin's selected styling. */
+#FMB070NavOrder.fmb071-home-title #FMB071Link17,
+#FMB070NavOrder.fmb071-p3146487296 #FMB071Link17,
+#FMB070NavOrder.fmb071-u3146487296 #FMB071Link17,
+#FMB070NavOrder.fmb071-home-title #FMB071Link17 #FMBDevCentreLink,
+#FMB070NavOrder.fmb071-p3146487296 #FMB071Link17 #FMBDevCentreLink,
+#FMB070NavOrder.fmb071-u3146487296 #FMB071Link17 #FMBDevCentreLink,
+#FMB070NavOrder.fmb071-home-title #FMB071Link17 #buttons-button-navigation-default,
+#FMB070NavOrder.fmb071-p3146487296 #FMB071Link17 #buttons-button-navigation-default,
+#FMB070NavOrder.fmb071-u3146487296 #FMB071Link17 #buttons-button-navigation-default {
+    background-color: transparent;
+    background-image: none;
+    border-left-color: transparent;
+}
+#FMB070NavOrder.fmb071-home-title #FMB071Link17 #MainFrame,
+#FMB070NavOrder.fmb071-p3146487296 #FMB071Link17 #MainFrame,
+#FMB070NavOrder.fmb071-u3146487296 #FMB071Link17 #MainFrame,
+#FMB070NavOrder.fmb071-home-title #FMB071Link17 #NavTabDropdown .si-dropdown__selection-field,
+#FMB070NavOrder.fmb071-p3146487296 #FMB071Link17 #NavTabDropdown .si-dropdown__selection-field,
+#FMB070NavOrder.fmb071-u3146487296 #FMB071Link17 #NavTabDropdown .si-dropdown__selection-field {
+    background-color: transparent;
+}
+#FMB070NavOrder.fmb071-home-title #FMB071Link17 #buttons-button-navigation-default > SIGradient,
+#FMB070NavOrder.fmb071-p3146487296 #FMB071Link17 #buttons-button-navigation-default > SIGradient,
+#FMB070NavOrder.fmb071-u3146487296 #FMB071Link17 #buttons-button-navigation-default > SIGradient {
+    display: none;
+}
+#FMB070NavOrder.fmb071-home-title #FMB071Link17 #buttons-button-navigation-default:hover,
+#FMB070NavOrder.fmb071-p3146487296 #FMB071Link17 #buttons-button-navigation-default:hover,
+#FMB070NavOrder.fmb071-u3146487296 #FMB071Link17 #buttons-button-navigation-default:hover {
+    background-color: rgba(245, 247, 251, 0.075);
+}
+#FMB070NavOrder.fmb071-home-title #FMB071Link17 #buttons-button-navigation-default:focus,
+#FMB070NavOrder.fmb071-p3146487296 #FMB071Link17 #buttons-button-navigation-default:focus,
+#FMB070NavOrder.fmb071-u3146487296 #FMB071Link17 #buttons-button-navigation-default:focus {
+    border-left-color: #979ba3;
+}
+
+/* Reserve the Home inset inside the persistent club body during report navigation.
+   The separate PortalScreen already inherits its inset from MenuBody. */
+#BindingRoot.fmb056-ClubSite #GridLayout #GridLayoutElementContent > #ClubSiteBlock {
+    padding-bottom: 10px;
+}

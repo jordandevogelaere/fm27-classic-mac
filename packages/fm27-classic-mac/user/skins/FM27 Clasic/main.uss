@@ -1,0 +1,1406 @@
+@import url("custom.uss");
+@import url("home.uss");
+@import url("my-contract.uss");
+@import url("career-tabs.uss");
+@import url("borders.uss");
+@import url("squad-depth.uss");
+@import url("competitions-hub.uss");
+@import url("dynamics-tactics.uss");
+@import url("news-medical.uss");
+@import url("schedule.uss");
+
+@import url("club-pages.uss");
+
+/* Offset the sidebar navigation by one link row. */
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder {
+    margin-top: 38px;
+}
+
+.fmb-foundation-standard #FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder {
+    margin-top: 32px;
+}
+.fmb-foundation-small #FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder,
+.fmb114-small #FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder {
+    margin-top: 28px;
+}
+
+/* Align the brand with the arrows. Paint their background on the same header. */
+#FMBClassicSidebar #FMB122SidebarHeader {
+    position: relative;
+    top: 2px;
+}
+#MainNav #FMB066SidebarPlate.fmb066-sidebar-plate {
+    background-color: transparent;
+    background-image: url("textures/fmb-sidebar-seam-wide.png");
+    -unity-background-scale-mode: stretch-to-fill;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.fmb114-navcollapsed #MainNav #FMB066SidebarPlate.fmb066-sidebar-plate {
+    background-image: url("textures/fmb-sidebar-seam-compact.png");
+}
+#MainNav #FMBGraphiteArtwork.fmb-career-wallpaper-hidden {
+    display: none;
+}
+#MainNav #FMB066SidebarPlate > #FMBViewedClubSidebarFade {
+    scale: 1 1;
+    top: 95px;
+    bottom: 0;
+    height: auto;
+    background-color: #252528;
+}
+#MainNav #FMBViewedClubSidebarFade > * {
+    height: 355px;
+    opacity: 0.903;
+}
+
+/* Player overview: protect the Info header and size each fact to its text. */
+#PlayerAttributesBlock #InfoBlockHeaderFrame,
+#PlayerAttributesBlock #InfoHeaderTextFrame,
+#PlayerAttributesBlock #InfoHeaderFrame {
+    min-height: 32px;
+    flex-shrink: 0;
+    align-items: center;
+}
+#PlayerAttributesBlock #InfoBlockFrame #InfoTitleText {
+    align-self: center;
+}
+#PlayerAttributesBlock #InfoBlockFrame > #Frame,
+#PlayerAttributesBlock #InfoBlockFrame #PersonalityVisibleForActualPlayer {
+    flex-shrink: 0;
+    align-self: stretch;
+}
+#PlayerAttributesBlock #InfoBlockFrame #PersonHeightTextFrame,
+#PlayerAttributesBlock #InfoBlockFrame #PlayerReputationTextFrame,
+#PlayerAttributesBlock #InfoBlockFrame #PlayerPersonalityTitleTextFrame {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    min-height: 22px;
+    flex-shrink: 0;
+    margin: 0;
+}
+#PlayerAttributesBlock #InfoBlockFrame #PersonHeightTitleText,
+#PlayerAttributesBlock #InfoBlockFrame #PlayerReputationTitleText,
+#PlayerAttributesBlock #InfoBlockFrame #PlayerPersonalityTitleText {
+    margin-bottom: 0;
+    margin-right: 6px;
+}
+#PlayerAttributesBlock #InfoBlockFrame #PlayerTraitsFrameList,
+#PlayerAttributesBlock #InfoBlockFrame #PlayerReportBansBlock {
+    margin-top: 0;
+}
+#PlayerAttributesBlock #InfoBlockFrame > .margin-vertical-global-gap-regular {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+#PlayerAttributesBlock .fmb055-radar#AttributeSpiderChart {
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 0;
+    margin-right: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Crop only the outermost top edge of the transparent portrait layer. */
+#report-player-full-header-max #PersonPictureFrame #PictureTeamRemapper,
+#report-non-player-full-header-max-type-player #PersonPictureFrame #PictureTeamRemapper {
+    top: 2px;
+    bottom: 0;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    overflow: hidden;
+}
+#PersonPictureFrame #PictureTeamRemapper > #PersonPicture {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* Keep the stadium and its painted sectors inside the inbox attachment. */
+#MessageAttachments #spread-container > #chart-container.fmb069-bowl {
+    width: 160px;
+    min-width: 160px;
+    max-width: 160px;
+    height: 184px;
+    min-height: 184px;
+    max-height: 184px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 28px;
+}
+#MessageAttachments #chart-container.fmb069-bowl .fmb069-sector-disc {
+    width: 264px;
+    min-width: 264px;
+    max-width: 264px;
+    height: 264px;
+    min-height: 264px;
+    max-height: 264px;
+    left: -52px;
+    top: -40px;
+}
+
+/* Match the club-report header when showing the manager's own team. */
+#MainNav #FMBHeaderQuickFlicks > #BaseLayer {
+    flex-direction: row-reverse;
+}
+
+#CardBody, #ReportBody, #PlayerInstructionsCard, #PlayerReport {
+    overflow: visible;
+}
+.fmb132-state { display: none; }
+#FMB132PitchPlayerName {
+    align-self: stretch;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    background-color: transparent;
+}
+#PlayerReport #FMB132PlayerViewport {
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+    min-height: 0;
+    align-self: stretch;
+}
+#ReportBody #PlayerReport .fmb132-pitch-profile {
+    overflow: visible;
+}
+#ReportBody #PlayerReport .fmb132-pitch-profile > #FMB132PlayerViewport {
+    position: absolute;
+    left: -198px;
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    padding: 10px;
+    background-color: #292929;
+}
+#CardBody #PlayerInstructionsCard .fmb071-shirt-card {
+    overflow: visible;
+}
+#CardBody #PlayerInstructionsCard #FMB132InstructionsViewport {
+    position: absolute;
+    left: -198px;
+    top: -110px;
+    right: -10px;
+    bottom: -10px;
+    margin: 0;
+    padding: 0;
+    align-items: stretch;
+    justify-content: center;
+    background-color: rgba(12, 13, 16, 0.70);
+}
+#CardBody #PlayerInstructionsCard #FMB132InstructionsViewport > #OptionalsDefaulter {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+}
+#CardBody #PlayerInstructionsCard #CardController {
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+#CardBody #PlayerInstructionsCard #CardContainer {
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    flex-basis: auto;
+    align-self: stretch;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    background-image: none;
+}
+#ReportBody #PlayerReport .fmb132-pitch-profile.fmb114-collapsed > #FMB132PlayerViewport {
+    left: -66px;
+}
+#CardBody #PlayerInstructionsCard #CardContent {
+    width: 1618px;
+    max-width: 96%;
+    min-width: 0;
+    height: 890px;
+    max-height: 94%;
+    min-height: 0;
+    padding: 8px;
+    border-width: 1px;
+    border-color: #484848;
+    border-radius: 4px;
+    align-self: center;
+    align-items: stretch;
+    justify-content: center;
+}
+#CardBody #PlayerInstructionsCard #SpeakToVariables {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    min-width: 0;
+    min-height: 0;
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 0;
+}
+#CardBody #PlayerInstructionsCard .fmb067-popup-shade {
+    display: none;
+}
+
+
+
+#FMB132PitchPlayerName > #FMB132PitchClick {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    min-width: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* Continue the primary club artwork behind the navigation links and bookmarks. */
+#MainNav #FMBFlushHeader {
+    min-height: 95px;
+}
+#SecondaryNavigationBar #FMBFlushHeader,
+#SecondaryNavigationBar #EntityGradient,
+#SecondaryNavigationBar #FMB065NavigationPattern {
+    display: none;
+}
+#SecondaryNavigationBar,
+#SecondaryNavigationBar .fmb066-tabs-plane,
+#SecondaryNavigationBar .fmb065-nav-safe,
+#SecondaryNavigationBar #FMBViewedEntityTabs,
+#SecondaryNavigationBar #Bookmarks {
+    background-color: transparent;
+}
+
+/* The dynamic class on the wrapper supplies a morale level. Only the image in
+   the row should paint the glyph; the wrapper needs room for the description. */
+#FMBMoraleCell.fmb-happiness-cell051 {
+    background-image: none;
+    width: 100%;
+    height: auto;
+    align-self: stretch;
+    justify-content: center;
+}
+#FMBMoraleCell > #Morale.fmb-happiness-cell-content051 {
+    background-image: none;
+}
+#FMBMoraleCell > #Morale > .siimage {
+    width: 16px;
+    min-width: 16px;
+    max-width: 16px;
+    height: 16px;
+    min-height: 16px;
+    max-height: 16px;
+    flex-shrink: 0;
+    align-self: center;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+/* Extend the rotated sidebar strokes past the join with the navigation artwork. */
+#MainNav #FMB066SidebarPlate > VisualElement {
+    scale: 1 1.12;
+}
+
+/* These five hairlines share the header canvas. Anchor them to its right edge,
+   so the spacing follows the window and the bookmark row at every resolution. */
+#MainNav #FMBFlushHeader > #FMBHeaderContinuation0,
+#MainNav #FMBFlushHeader > #FMBHeaderContinuation1,
+#MainNav #FMBFlushHeader > #FMBHeaderContinuation2,
+#MainNav #FMBFlushHeader > #FMBHeaderContinuation13,
+#MainNav #FMBFlushHeader > #FMBHeaderContinuation14 {
+    margin-left: 100%;
+}
+#MainNav #FMBFlushHeader > #FMBHeaderContinuation1 { translate: -395.06px 0; }
+#MainNav #FMBFlushHeader > #FMBHeaderContinuation2 { translate: -394.56px 0; }
+#MainNav #FMBFlushHeader > #FMBHeaderContinuation0 { translate: -211.46px 0; }
+#MainNav #FMBFlushHeader > #FMBHeaderContinuation13 { translate: -566.6px 0; }
+#MainNav #FMBFlushHeader > #FMBHeaderContinuation14 { translate: -568.6px 0; }
+
+/* Leave the clickable sidebar's geometry intact; start its divider below both rows. */
+#MainNav #FMBClassicSidebar { border-right-color: transparent; }
+#MainNav #FMBHeaderSurface049.fmb068-nav-surface {
+    left: 188px;
+    right: auto;
+    top: 95px;
+    bottom: auto;
+    width: 1px;
+    height: 3200px;
+    background-color: #45474c;
+}
+.fmb114-navcollapsed #MainNav #FMBHeaderSurface049.fmb068-nav-surface { left: 56px; }
+#MainNav #FMBHeaderSurface049 > * { display: none; }
+
+/* At the narrower join the header samples a stronger part of the same gradient. */
+.fmb114-navcollapsed #MainNav #FMBFlushHeader > #FMBRefEdgeLeft { opacity: 0.80; }
+
+/* The narrow spill uses the same viewed-entity gradient as the header itself. */
+#SecondaryNavigationBar #FMBFlushHeader {
+    display: flex;
+    margin-top: 30px;
+    max-width: 8px;
+    min-height: 3200px;
+    opacity: 0.16;
+}
+#SecondaryNavigationBar #FMBFlushExpanded { margin-left: 188px; }
+#SecondaryNavigationBar #FMBFlushCompact { margin-left: 56px; }
+#SecondaryNavigationBar #FMBFlushHeader #FMBRefEdgeLeft { min-width: 100%; }
+#SecondaryNavigationBar #FMBFlushHeader #FMBRefEdgeRight,
+#SecondaryNavigationBar #FMBFlushExpanded > VisualElement,
+#SecondaryNavigationBar #FMBFlushCompact > VisualElement { display: none; }
+
+/* Keep the whole right-hand motif inside the last tenth of the header. */
+#MainNav #FMBFlushHeader > #FMBHeaderContinuation1 { margin-left: 90.8%; translate: 22.94px 0; }
+#MainNav #FMBFlushHeader > #FMBHeaderContinuation2 { margin-left: 90.8%; translate: 23.44px 0; }
+#MainNav #FMBFlushHeader > #FMBHeaderContinuation0 { margin-left: 95.5%; translate: 39.54px 0; }
+#MainNav #FMBFlushHeader > #FMBHeaderContinuation13 { margin-left: 100%; translate: -492.6px 0; }
+#MainNav #FMBFlushHeader > #FMBHeaderContinuation14 { margin-left: 100%; translate: -494.6px 0; }
+
+/* Round the inside junction where the content meets both navigation bars. */
+.fmb114-navstate #MainNav #FMBContextHeaderColour.fmb-context-header-colour {
+    left: 188px;
+    right: auto;
+    top: 95px;
+    bottom: auto;
+    width: 12px;
+    height: 12px;
+    overflow: hidden;
+    background-color: #252528;
+    opacity: 0.70;
+}
+.fmb114-navcollapsed #MainNav #FMBContextHeaderColour.fmb-context-header-colour {
+    left: 56px;
+    opacity: 0.68;
+}
+#MainNav #FMBHeaderSurface049.fmb068-nav-surface {
+    width: auto;
+    right: 0;
+    background-color: transparent;
+    border-left-width: 1px;
+    border-left-color: #45474c;
+    border-top-width: 1px;
+    border-top-color: #45474c;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    overflow: hidden;
+}
+#MainNav #FMBHeaderSurface049 > #FMB065NavigationPattern {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: auto;
+    width: 11px;
+    max-width: 11px;
+    bottom: auto;
+    height: 12px;
+    background-color: #292929;
+}
+#MainNav #FMBHeaderSurface049 > #FMB065NavigationPattern > * { display: none; }
+#SecondaryNavigationBar #FMBFlushHeader { margin-top: 42px; }
+
+/* The preview grid has ten columns of player information and five of report.
+   Extend only its non-interactive artwork across their shared row. */
+.sitooltip.fmb-player-preview {
+    background-color: #242528;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #47494e;
+    overflow: hidden;
+}
+.fmb-player-preview #PlayerReportHeaderTooltip,
+.fmb-player-preview #PlayerReportHeaderTooltip > BindingRemapper,
+.fmb-player-preview #PlayerReportHeaderTooltip .grid-element--Block,
+.fmb-player-preview #PlayerReportHeaderTooltip .grid-element--Block > TemplateContainer,
+.fmb-player-preview #PlayerReportHeaderTooltip .fmb085-popup-header,
+.fmb-player-preview #PlayerReportHeaderTooltip .fmb-preview-header-remap,
+.fmb-player-preview #PlayerReportHeaderTooltip .fmb071-preview-banner {
+    overflow: visible;
+    background-color: transparent;
+}
+.fmb-player-preview #PlayerReportHeaderTooltip #FMB067ReportPlate {
+    left: 0;
+    right: -50%;
+    width: auto;
+    margin-right: -5px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #252528;
+}
+.fmb-player-preview #FMB067ReportPlate .fmb066-profile-colour {
+    right: auto;
+    width: 70%;
+    opacity: 0.90;
+}
+.fmb-player-preview #FMB067ReportPlate .fmb066-profile-edge {
+    display: flex;
+    left: auto;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 28%;
+    height: 100%;
+    scale: -1 1;
+    opacity: 0.36;
+}
+.fmb-player-preview #FMB067ReportPlate > .fmb066-profile-line0,
+.fmb-player-preview #FMB067ReportPlate > .fmb066-profile-line1,
+.fmb-player-preview #FMB067ReportPlate > .fmb066-profile-line2,
+.fmb-player-preview #FMB067ReportPlate > .fmb066-profile-line3,
+.fmb-player-preview #FMB067ReportPlate > .fmb066-profile-line4,
+.fmb-player-preview #FMB067ReportPlate > .fmb066-profile-line5 {
+    display: flex;
+    position: absolute;
+    width: 1px;
+    height: 270px;
+    top: 50%;
+    margin-top: -135px;
+    rotate: 35deg;
+    background-color: rgba(229, 232, 236, 0.13);
+}
+.fmb-player-preview #FMB067ReportPlate > .fmb066-profile-line0 { left: 3%; right: auto; }
+.fmb-player-preview #FMB067ReportPlate > .fmb066-profile-line1 { left: 4%; right: auto; opacity: 0.55; }
+.fmb-player-preview #FMB067ReportPlate > .fmb066-profile-line2 { left: auto; right: 13%; }
+.fmb-player-preview #FMB067ReportPlate > .fmb066-profile-line3 { left: auto; right: 12%; opacity: 0.55; }
+.fmb-player-preview #FMB067ReportPlate > .fmb066-profile-line4 { left: auto; right: 4%; }
+.fmb-player-preview #FMB067ReportPlate > .fmb066-profile-line5 { left: auto; right: 3%; opacity: 0.55; }
+
+.fmb-player-preview #CoachScoutReportBlock,
+.fmb-player-preview #CoachScoutReportBlock .grid-element--Block,
+.fmb-player-preview #CoachScoutReportBlock .fmb050-preview-coach,
+.fmb-player-preview #CoachScoutReportBlock #CoachBlock,
+.fmb-player-preview #CoachScoutReportBlock #ScoutBlock {
+    background-color: transparent;
+    border-width: 0;
+}
+.fmb-player-preview #CoachScoutReportBlock .fmb050-summary-inset {
+    border-left-width: 1px;
+    border-left-color: rgba(229, 232, 236, 0.15);
+    padding-left: 10px;
+    min-width: 0;
+}
+.fmb-player-preview #PlayerReportHeaderTooltip .fmb-preview-name {
+    font-size: 18px;
+    -unity-font-style: bold;
+}
+.fmb-player-preview #CoachScoutReportBlock .fmb050-summary-title {
+    font-size: 13px;
+    -unity-font-style: bold;
+    color: #f1f1ed;
+}
+
+/* The identity and the club rows share the same text inset, including when
+   there is no visible editor icon before the name. */
+.fmb-player-preview #PlayerReportHeaderTooltip .fmb-preview-identity-inner,
+.fmb-player-preview #PlayerReportHeaderTooltip .fmb-preview-contract > .fmb-preview-clubs {
+    padding-left: 8px;
+}
+.fmb-player-preview #PlayerReportHeaderTooltip .fmb-preview-identity-inner > .column-direction-normal.margin-right-global-gap-regular {
+    margin-right: 0;
+}
+.fmb-player-preview #PlayerReportHeaderTooltip .fmb-preview-clubs {
+    justify-content: flex-start;
+}
+.fmb-player-preview #PlayerReportHeaderTooltip .fmb-preview-clubs #ClubIcon {
+    margin-left: 0;
+    margin-right: 4px;
+    align-items: flex-start;
+}
+.fmb-player-preview #PlayerReportHeaderTooltip .fmb-preview-person .nation-flag-small-16px {
+    align-items: flex-start;
+}
+.fmb-player-preview #PlayerReportHeaderTooltip .fmb-preview-person #NationFlag {
+    width: 100%;
+}
+.fmb-player-preview #PlayerReportHeaderTooltip .fmb-preview-clubs #PlayingTime .sitext,
+.fmb-player-preview #PlayerReportHeaderTooltip .fmb-preview-value .secondary-text-colour {
+    color: #c8cbd2;
+}
+
+.fmb-player-preview #PlayerAttributesBlock {
+    border-radius: 7px;
+    border-width: 1px;
+    border-color: #404145;
+    overflow: hidden;
+}
+
+
+/* FM Blog: Home and Club overview woven backdrop. */
+
+/* Club overview artwork uses the same weave at both ends of the header seam. */
+
+.fmb067-club-hero,
+#HomeClubContext .fmb067-club-hero,
+#ClubSite .fmb067-club-hero {
+    background-image: url("textures/fmb-fine-overview-header-76c8ac78ca.png");
+    -unity-background-image-tint-color: #ffffff;
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.fmb125-home-main,
+#ClubHomeLargeBody .fmb125-home-main,
+#HomeClubContext #ClubHomeLargeBody .fmb125-home-main,
+#ClubSite #ClubHomeLargeBody .fmb125-home-main,
+#ClubSiteBlock .fmb125-home-main,
+#ClubSiteBlockMidRes > .siblock-border,
+#ClubSiteBlockLowRes > .siblock-border,
+#ClubSiteBlockMidRes.siblock-border,
+#ClubSiteBlockLowRes.siblock-border {
+    background-image: url("textures/fmb-fine-overview-body-c67667bcdc.png");
+    -unity-background-image-tint-color: #ffffff;
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+/* Career blocks are separate from the compact tile elements. */
+
+#MenuBody .grid-element--Block,
+#ReportBody .grid-element--Block {
+    background-image: url("textures/fmb-fine-panel-346914a4f0.png");
+    -unity-background-image-tint-color: #ffffff;
+    background-size: 600px 600px;
+    background-repeat: repeat;
+}
+
+#MenuBody .grid-element--Block > TemplateContainer > .block-border-only,
+#MenuBody .grid-element--Block > TemplateContainer > .frames-general-view,
+#MenuBody .grid-element--Block > TemplateContainer > .layout-block-base-container,
+#MenuBody .grid-element--Block > TemplateContainer > .siblock,
+#MenuBody .grid-element--Block > TemplateContainer > .siblock-border,
+#MenuBody .grid-element--Block > TemplateContainer > BindingExpect > .block-border-only,
+#MenuBody .grid-element--Block > TemplateContainer > BindingExpect > .frames-finance-graph-property,
+#MenuBody .grid-element--Block > TemplateContainer > BindingExpect > .frames-world-knowledge-property-1-nations,
+#MenuBody .grid-element--Block > TemplateContainer > BindingExpect > .layout-block-base-container,
+#MenuBody .grid-element--Block > TemplateContainer > BindingExpect > .siblock,
+#MenuBody .grid-element--Block > TemplateContainer > BindingExpect > .siblock-border,
+#MenuBody .grid-element--Block > TemplateContainer > BindingExpect > BindableSwitchElement > BindingVariables > BindingRemapper > .siblock-border,
+#MenuBody .grid-element--Block > TemplateContainer > BindingExpect > BindableSwitchElement > BindingVariables > ComponentElement > .siblock-border,
+#MenuBody .grid-element--Block > TemplateContainer > BindingExpect > BindableSwitchElement > ComponentElement > .siblock-border,
+#MenuBody .grid-element--Block > TemplateContainer > BindingExpect > BindingRemapper > .siblock-border,
+#MenuBody .grid-element--Block > TemplateContainer > BindingExpect > BindingRemapper > BindableSwitchElement > .siblock-border,
+#MenuBody .grid-element--Block > TemplateContainer > BindingExpect > BindingVariables > .siblock-border,
+#MenuBody .grid-element--Block > TemplateContainer > BindingExpect > BindingVariables > BindingRemapper > .siblock-border,
+#MenuBody .grid-element--Block > TemplateContainer > BindingExpect > ComponentElement > .siblock-border,
+#MenuBody .grid-element--Block > TemplateContainer > BindingExpect > ComponentElement > BindableSwitchElement > VisualElement > .block-border-only,
+#MenuBody .grid-element--Block > TemplateContainer > BindingExpect > SIVisible > ComponentElement > .siblock-border,
+#MenuBody .grid-element--Block > TemplateContainer > BindingExpect > SIVisible > VisualElement > .siblock-border,
+#MenuBody .grid-element--Block > TemplateContainer > BindingExpect > VisualElement > .block-border-only,
+#MenuBody .grid-element--Block > TemplateContainer > BindingExpect > VisualElement > .siblock-border {
+    background-color: transparent;
+}
+
+#MenuBody .grid-element--Block > TemplateContainer > BindingExpect > VisualElement > BindableSwitchElement > .block-border-only,
+#MenuBody .grid-element--Block > TemplateContainer > BindingExpect > VisualElement > SIStyleSetter > .frames-summary-property-1-board,
+#MenuBody .grid-element--Block > TemplateContainer > BindingExpect > VisualElement > SIVisible > VisualElement > .siblock-border,
+#MenuBody .grid-element--Block > TemplateContainer > BindingVariables > .layout-block-base-container,
+#MenuBody .grid-element--Block > TemplateContainer > BindingVariables > .siblock-border,
+#MenuBody .grid-element--Block > TemplateContainer > ComponentElement > .block-border-only,
+#MenuBody .grid-element--Block > TemplateContainer > ComponentElement > .fmb070-profile-line,
+#MenuBody .grid-element--Block > TemplateContainer > ComponentElement > .frame-panel-squad,
+#MenuBody .grid-element--Block > TemplateContainer > ComponentElement > .frames-general-view,
+#MenuBody .grid-element--Block > TemplateContainer > ComponentElement > .frames-income-breakdown,
+#MenuBody .grid-element--Block > TemplateContainer > ComponentElement > .frames-national-team-overview-property-1-standard,
+#MenuBody .grid-element--Block > TemplateContainer > ComponentElement > .frames-player-attributes-full-block-size-max-rows,
+#MenuBody .grid-element--Block > TemplateContainer > ComponentElement > .frames-player-attributes-full-block-size-min-player-attributes-property-3-compact,
+#MenuBody .grid-element--Block > TemplateContainer > ComponentElement > .frames-staff_attributes-full_frame-standard-states-manager,
+#MenuBody .grid-element--Block > TemplateContainer > ComponentElement > .layout-block-base-container,
+#MenuBody .grid-element--Block > TemplateContainer > ComponentElement > .siblock,
+#MenuBody .grid-element--Block > TemplateContainer > ComponentElement > .siblock-border,
+#MenuBody .grid-element--Block > TemplateContainer > ComponentElement > BindableSwitchElement > .block-border-only,
+#MenuBody .grid-element--Block > TemplateContainer > ComponentElement > BindableSwitchElement > .siblock-border,
+#MenuBody .grid-element--Block > TemplateContainer > ComponentElement > BindableSwitchElement > BindingVariables > TabGroup > .block-border-only,
+#MenuBody .grid-element--Block > TemplateContainer > ComponentElement > BindableSwitchElement > BindingVariables > TabGroup > .siblock,
+#MenuBody .grid-element--Block > TemplateContainer > ComponentElement > BindableSwitchElement > ComponentElement > TabGroup > .siblock-border,
+#MenuBody .grid-element--Block > TemplateContainer > ComponentElement > BindableSwitchElement > VisualElement > .siblock-border,
+#MenuBody .grid-element--Block > TemplateContainer > ComponentElement > BindingRemapper > .siblock-border {
+    background-color: transparent;
+}
+
+#MenuBody .grid-element--Block > TemplateContainer > ComponentElement > BindingVariables > .siblock-border,
+#MenuBody .grid-element--Block > TemplateContainer > ComponentElement > SIVisible > .siblock-border,
+#MenuBody .grid-element--Block > TemplateContainer > ComponentElement > SIVisible > TabGroup > .siblock-border,
+#MenuBody .grid-element--Block > TemplateContainer > ComponentElement > VisualElement > .block-border-only,
+#MenuBody .grid-element--Block > TemplateContainer > ComponentElement > VisualElement > .siblock-border,
+#MenuBody .grid-element--Block > TemplateContainer > ComponentElement > VisualElement > BindableSwitchElement > .siblock-border,
+#MenuBody .grid-element--Block > TemplateContainer > ComponentElement > VisualElement > BindableSwitchElement > VisualElement > .siblock-border,
+#MenuBody .grid-element--Block > TemplateContainer > ComponentElement > VisualElement > SIStyleSetter > .frames-summary-property-1-board,
+#MenuBody .grid-element--Block > TemplateContainer > ComponentElement > VisualElement > SIVisible > SIStyleSetter > .frames-summary-property-1-board,
+#MenuBody .grid-element--Block > TemplateContainer > ComponentElement > VisualElement > VisualElement > .siblock-border,
+#MenuBody .grid-element--Block > TemplateContainer > VisualElement > .siblock,
+#MenuBody .grid-element--Block > TemplateContainer > VisualElement > BindingExpect > VisualElement > .frames-medicial-injury-history-list {
+    background-color: transparent;
+}
+
+#ReportBody .grid-element--Block > TemplateContainer > .block-border-only,
+#ReportBody .grid-element--Block > TemplateContainer > .frames-general-view,
+#ReportBody .grid-element--Block > TemplateContainer > .layout-block-base-container,
+#ReportBody .grid-element--Block > TemplateContainer > .siblock,
+#ReportBody .grid-element--Block > TemplateContainer > .siblock-border,
+#ReportBody .grid-element--Block > TemplateContainer > BindingExpect > .block-border-only,
+#ReportBody .grid-element--Block > TemplateContainer > BindingExpect > .frames-finance-graph-property,
+#ReportBody .grid-element--Block > TemplateContainer > BindingExpect > .frames-world-knowledge-property-1-nations,
+#ReportBody .grid-element--Block > TemplateContainer > BindingExpect > .layout-block-base-container,
+#ReportBody .grid-element--Block > TemplateContainer > BindingExpect > .siblock,
+#ReportBody .grid-element--Block > TemplateContainer > BindingExpect > .siblock-border,
+#ReportBody .grid-element--Block > TemplateContainer > BindingExpect > BindableSwitchElement > BindingVariables > BindingRemapper > .siblock-border,
+#ReportBody .grid-element--Block > TemplateContainer > BindingExpect > BindableSwitchElement > BindingVariables > ComponentElement > .siblock-border,
+#ReportBody .grid-element--Block > TemplateContainer > BindingExpect > BindableSwitchElement > ComponentElement > .siblock-border,
+#ReportBody .grid-element--Block > TemplateContainer > BindingExpect > BindingRemapper > .siblock-border,
+#ReportBody .grid-element--Block > TemplateContainer > BindingExpect > BindingRemapper > BindableSwitchElement > .siblock-border,
+#ReportBody .grid-element--Block > TemplateContainer > BindingExpect > BindingVariables > .siblock-border,
+#ReportBody .grid-element--Block > TemplateContainer > BindingExpect > BindingVariables > BindingRemapper > .siblock-border,
+#ReportBody .grid-element--Block > TemplateContainer > BindingExpect > ComponentElement > .siblock-border,
+#ReportBody .grid-element--Block > TemplateContainer > BindingExpect > ComponentElement > BindableSwitchElement > VisualElement > .block-border-only,
+#ReportBody .grid-element--Block > TemplateContainer > BindingExpect > SIVisible > ComponentElement > .siblock-border,
+#ReportBody .grid-element--Block > TemplateContainer > BindingExpect > SIVisible > VisualElement > .siblock-border,
+#ReportBody .grid-element--Block > TemplateContainer > BindingExpect > VisualElement > .block-border-only,
+#ReportBody .grid-element--Block > TemplateContainer > BindingExpect > VisualElement > .siblock-border {
+    background-color: transparent;
+}
+
+#ReportBody .grid-element--Block > TemplateContainer > BindingExpect > VisualElement > BindableSwitchElement > .block-border-only,
+#ReportBody .grid-element--Block > TemplateContainer > BindingExpect > VisualElement > SIStyleSetter > .frames-summary-property-1-board,
+#ReportBody .grid-element--Block > TemplateContainer > BindingExpect > VisualElement > SIVisible > VisualElement > .siblock-border,
+#ReportBody .grid-element--Block > TemplateContainer > BindingVariables > .layout-block-base-container,
+#ReportBody .grid-element--Block > TemplateContainer > BindingVariables > .siblock-border,
+#ReportBody .grid-element--Block > TemplateContainer > ComponentElement > .block-border-only,
+#ReportBody .grid-element--Block > TemplateContainer > ComponentElement > .fmb070-profile-line,
+#ReportBody .grid-element--Block > TemplateContainer > ComponentElement > .frame-panel-squad,
+#ReportBody .grid-element--Block > TemplateContainer > ComponentElement > .frames-general-view,
+#ReportBody .grid-element--Block > TemplateContainer > ComponentElement > .frames-income-breakdown,
+#ReportBody .grid-element--Block > TemplateContainer > ComponentElement > .frames-national-team-overview-property-1-standard,
+#ReportBody .grid-element--Block > TemplateContainer > ComponentElement > .frames-player-attributes-full-block-size-max-rows,
+#ReportBody .grid-element--Block > TemplateContainer > ComponentElement > .frames-player-attributes-full-block-size-min-player-attributes-property-3-compact,
+#ReportBody .grid-element--Block > TemplateContainer > ComponentElement > .frames-staff_attributes-full_frame-standard-states-manager,
+#ReportBody .grid-element--Block > TemplateContainer > ComponentElement > .layout-block-base-container,
+#ReportBody .grid-element--Block > TemplateContainer > ComponentElement > .siblock,
+#ReportBody .grid-element--Block > TemplateContainer > ComponentElement > .siblock-border,
+#ReportBody .grid-element--Block > TemplateContainer > ComponentElement > BindableSwitchElement > .block-border-only,
+#ReportBody .grid-element--Block > TemplateContainer > ComponentElement > BindableSwitchElement > .siblock-border,
+#ReportBody .grid-element--Block > TemplateContainer > ComponentElement > BindableSwitchElement > BindingVariables > TabGroup > .block-border-only,
+#ReportBody .grid-element--Block > TemplateContainer > ComponentElement > BindableSwitchElement > BindingVariables > TabGroup > .siblock,
+#ReportBody .grid-element--Block > TemplateContainer > ComponentElement > BindableSwitchElement > ComponentElement > TabGroup > .siblock-border,
+#ReportBody .grid-element--Block > TemplateContainer > ComponentElement > BindableSwitchElement > VisualElement > .siblock-border,
+#ReportBody .grid-element--Block > TemplateContainer > ComponentElement > BindingRemapper > .siblock-border {
+    background-color: transparent;
+}
+
+#ReportBody .grid-element--Block > TemplateContainer > ComponentElement > BindingVariables > .siblock-border,
+#ReportBody .grid-element--Block > TemplateContainer > ComponentElement > SIVisible > .siblock-border,
+#ReportBody .grid-element--Block > TemplateContainer > ComponentElement > SIVisible > TabGroup > .siblock-border,
+#ReportBody .grid-element--Block > TemplateContainer > ComponentElement > VisualElement > .block-border-only,
+#ReportBody .grid-element--Block > TemplateContainer > ComponentElement > VisualElement > .siblock-border,
+#ReportBody .grid-element--Block > TemplateContainer > ComponentElement > VisualElement > BindableSwitchElement > .siblock-border,
+#ReportBody .grid-element--Block > TemplateContainer > ComponentElement > VisualElement > BindableSwitchElement > VisualElement > .siblock-border,
+#ReportBody .grid-element--Block > TemplateContainer > ComponentElement > VisualElement > SIStyleSetter > .frames-summary-property-1-board,
+#ReportBody .grid-element--Block > TemplateContainer > ComponentElement > VisualElement > SIVisible > SIStyleSetter > .frames-summary-property-1-board,
+#ReportBody .grid-element--Block > TemplateContainer > ComponentElement > VisualElement > VisualElement > .siblock-border,
+#ReportBody .grid-element--Block > TemplateContainer > VisualElement > .siblock,
+#ReportBody .grid-element--Block > TemplateContainer > VisualElement > BindingExpect > VisualElement > .frames-medicial-injury-history-list {
+    background-color: transparent;
+}
+
+/* The title/search button keeps its click area and existing fill. */
+#MainNav #FMB071NavHeading.fmb071-heading {
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+#MainNav #FMB071NavHeading.fmb071-heading:hover {
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+#MainNav #FMB071NavHeading.fmb071-heading:active {
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+
+/* End Home and Club overview woven backdrop. */
+
+/* FM Blog: joined header corner and responsive search. */
+#SecondaryNavigationBar .fmb066-tabs-plane > #EntityGradient,
+#SecondaryNavigationBar .fmb066-tabs-plane > #FMB065NavigationPattern {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    right: auto;
+    bottom: auto;
+    margin-top: 0;
+    width: 12px;
+    min-width: 12px;
+    max-width: 12px;
+    height: 12px;
+    min-height: 12px;
+    max-height: 12px;
+    opacity: 1;
+    overflow: hidden;
+}
+#SecondaryNavigationBar .fmb066-tabs-plane > #EntityGradient {
+    background-color: #38383c;
+}
+#SecondaryNavigationBar .fmb066-tabs-plane > #EntityGradient .global-nav_secondary-texture-entity-viewer {
+    display: none;
+}
+#SecondaryNavigationBar .fmb066-tabs-plane > #FMB065NavigationPattern {
+    background-image: none;
+    background-color: #292929;
+    border-top-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-top-color: #45474c;
+    border-left-color: #45474c;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#SecondaryNavigationBar .fmb066-tabs-plane > #FMB065NavigationPattern > * {
+    display: none;
+}
+
+/* The navigation row begins at 364px (232px collapsed) and ends 8px
+   before the screen edge. Centre the field's end against the whole screen. */
+#MainNav #MainNavigationBar > #FMB071NavHeading.fmb071-heading {
+    position: absolute;
+    left: 0;
+    right: 50%;
+    top: 0;
+    bottom: auto;
+    width: auto;
+    max-width: none;
+    min-width: 0;
+    margin-right: 178px;
+    background-color: rgba(247, 248, 250, 0.085);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-color: rgba(244, 246, 250, 0.20);
+    border-right-color: rgba(244, 246, 250, 0.20);
+    border-top-color: rgba(244, 246, 250, 0.20);
+    border-bottom-color: rgba(244, 246, 250, 0.20);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.fmb114-navcollapsed #MainNav #MainNavigationBar > #FMB071NavHeading.fmb071-heading {
+    margin-right: 112px;
+}
+.fmb-foundation-small #MainNav #MainNavigationBar > #FMB071NavHeading.fmb071-heading,
+.fmb-foundation-standard #MainNav #MainNavigationBar > #FMB071NavHeading.fmb071-heading {
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    margin-right: 0;
+    max-width: 100%;
+}
+#MainNav #MainNavigationBar > #FMB071NavHeading.fmb071-heading:hover {
+    background-color: rgba(247, 248, 250, 0.12);
+    border-left-color: rgba(244, 246, 250, 0.28);
+    border-right-color: rgba(244, 246, 250, 0.28);
+    border-top-color: rgba(244, 246, 250, 0.28);
+    border-bottom-color: rgba(244, 246, 250, 0.28);
+}
+#MainNav #MainNavigationBar > #FMB071NavHeading.fmb071-heading:active {
+    background-color: rgba(247, 248, 250, 0.15);
+}
+/* End joined header corner and responsive search. */
+
+/* Current sidebar route. */
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-competitions-title #FMB071Link11 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-home-title #FMB071Link0 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1015596264 #FMB071Link6 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1025498598 #FMB071Link16 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1025927956 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1109722668 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1190406692 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1196169692 #FMB071Link1 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1204137728 #FMB071Link7 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1208069888 #FMB071Link10 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1211327616 #FMB071Link3 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1222359851 #FMB071Link6 #buttons-button-navigation-default {
+    background-image: none;
+    background-color: rgba(246, 248, 252, 0.13);
+    border-left-width: 2px;
+    border-left-color: #edaa42;
+}
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1235629855 #FMB071Link11 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1254276256 #FMB071Link13 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1261674240 #FMB071Link14 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1273483520 #FMB071Link2 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1277698666 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1331635968 #FMB071Link9 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1351523679 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p135301632 #FMB071Link0 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1361953024 #FMB071Link13 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1381513472 #FMB071Link2 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1413751754 #FMB071Link1 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1447766784 #FMB071Link3 #buttons-button-navigation-default {
+    background-image: none;
+    background-color: rgba(246, 248, 252, 0.13);
+    border-left-width: 2px;
+    border-left-color: #edaa42;
+}
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1465386240 #FMB071Link16 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1473531648 #FMB071Link14 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1481179815 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1499886700 #FMB071Link7 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1533303040 #FMB071Link5 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1552885098 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1602765720 #FMB071Link7 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1644382949 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p167410999 #FMB071Link6 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1692401920 #FMB071Link0 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1709111023 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1718185728 #FMB071Link16 #buttons-button-navigation-default {
+    background-image: none;
+    background-color: rgba(246, 248, 252, 0.13);
+    border-left-width: 2px;
+    border-left-color: #edaa42;
+}
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1786106624 #FMB071Link12 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1836008022 #FMB071Link14 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1837234432 #FMB071Link16 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1839491560 #FMB071Link1 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1866863932 #FMB071Link11 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p188703353 #FMB071Link6 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1916460331 #FMB071Link11 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1950337270 #FMB071Link12 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p1952458496 #FMB071Link7 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p195478016 #FMB071Link5 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p195977374 #FMB071Link13 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2025251720 #FMB071Link17 #buttons-button-navigation-default {
+    background-image: none;
+    background-color: rgba(246, 248, 252, 0.13);
+    border-left-width: 2px;
+    border-left-color: #edaa42;
+}
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2034910059 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2078922496 #FMB071Link0 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2092456704 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2097303120 #FMB071Link7 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2121320192 #FMB071Link8 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2134809344 #FMB071Link13 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2164393008 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2176386123 #FMB071Link11 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2208928113 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p221703168 #FMB071Link7 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2254266112 #FMB071Link2 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2263778048 #FMB071Link5 #buttons-button-navigation-default {
+    background-image: none;
+    background-color: rgba(246, 248, 252, 0.13);
+    border-left-width: 2px;
+    border-left-color: #edaa42;
+}
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2295196698 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2331347200 #FMB071Link9 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2362315008 #FMB071Link15 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2363450624 #FMB071Link12 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2384599296 #FMB071Link6 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2396461475 #FMB071Link8 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2414898432 #FMB071Link0 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2414990592 #FMB071Link12 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2423941888 #FMB071Link14 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2440596575 #FMB071Link8 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2479473920 #FMB071Link13 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p249001726 #FMB071Link6 #buttons-button-navigation-default {
+    background-image: none;
+    background-color: rgba(246, 248, 252, 0.13);
+    border-left-width: 2px;
+    border-left-color: #edaa42;
+}
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p249601968 #FMB071Link6 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2517621123 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2520212446 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2536886662 #FMB071Link15 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2544975636 #FMB071Link15 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2549231360 #FMB071Link2 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2590779850 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2598177314 #FMB071Link7 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2612858766 #FMB071Link13 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2613780578 #FMB071Link11 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2623035648 #FMB071Link16 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2635223808 #FMB071Link14 #buttons-button-navigation-default {
+    background-image: none;
+    background-color: rgba(246, 248, 252, 0.13);
+    border-left-width: 2px;
+    border-left-color: #edaa42;
+}
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2658229504 #FMB071Link14 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p267838145 #FMB071Link13 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2693440336 #FMB071Link11 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2703606784 #FMB071Link13 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2766066688 #FMB071Link9 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2793790976 #FMB071Link0 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2812092275 #FMB071Link3 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2891733322 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p2948499227 #FMB071Link11 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3028710912 #FMB071Link12 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3051211776 #FMB071Link14 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3054852555 #FMB071Link15 #buttons-button-navigation-default {
+    background-image: none;
+    background-color: rgba(246, 248, 252, 0.13);
+    border-left-width: 2px;
+    border-left-color: #edaa42;
+}
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p305880064 #FMB071Link8 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3076437395 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3079849686 #FMB071Link5 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3128627712 #FMB071Link7 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3142970071 #FMB071Link6 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3145537024 #FMB071Link16 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3146487296 #FMB071Link0 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3173313024 #FMB071Link12 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p319808798 #FMB071Link6 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3199626752 #FMB071Link1 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3247718912 #FMB071Link7 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3273582080 #FMB071Link9 #buttons-button-navigation-default {
+    background-image: none;
+    background-color: rgba(246, 248, 252, 0.13);
+    border-left-width: 2px;
+    border-left-color: #edaa42;
+}
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3285910016 #FMB071Link4 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3313366528 #FMB071Link15 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3325974161 #FMB071Link6 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3334350336 #FMB071Link4 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3336692955 #FMB071Link8 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3341950045 #FMB071Link8 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3348350123 #FMB071Link15 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3392583224 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3400157696 #FMB071Link7 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3407429587 #FMB071Link3 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3465891281 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3474336938 #FMB071Link17 #buttons-button-navigation-default {
+    background-image: none;
+    background-color: rgba(246, 248, 252, 0.13);
+    border-left-width: 2px;
+    border-left-color: #edaa42;
+}
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3528381947 #FMB071Link6 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p356773888 #FMB071Link14 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3574631936 #FMB071Link11 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p357887968 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3638344704 #FMB071Link12 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3643682816 #FMB071Link16 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p365823488 #FMB071Link16 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3671413248 #FMB071Link0 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3689735168 #FMB071Link3 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3709978112 #FMB071Link14 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3720182567 #FMB071Link14 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3722354342 #FMB071Link14 #buttons-button-navigation-default {
+    background-image: none;
+    background-color: rgba(246, 248, 252, 0.13);
+    border-left-width: 2px;
+    border-left-color: #edaa42;
+}
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3728036352 #FMB071Link8 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3754068480 #FMB071Link5 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3755238400 #FMB071Link14 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3795081809 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3849794560 #FMB071Link13 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3857317376 #FMB071Link0 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p387845632 #FMB071Link14 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3920332920 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3930416128 #FMB071Link0 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3932303360 #FMB071Link0 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3936553472 #FMB071Link13 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3946954240 #FMB071Link16 #buttons-button-navigation-default {
+    background-image: none;
+    background-color: rgba(246, 248, 252, 0.13);
+    border-left-width: 2px;
+    border-left-color: #edaa42;
+}
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3979388416 #FMB071Link9 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p3992489936 #FMB071Link1 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p402192710 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p4025415133 #FMB071Link5 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p4045698048 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p4049842854 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p4072482863 #FMB071Link1 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p4113948160 #FMB071Link12 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p4115160284 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p4119577600 #FMB071Link5 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p4123845667 #FMB071Link6 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p413690481 #FMB071Link11 #buttons-button-navigation-default {
+    background-image: none;
+    background-color: rgba(246, 248, 252, 0.13);
+    border-left-width: 2px;
+    border-left-color: #edaa42;
+}
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p4148671628 #FMB071Link7 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p4155998042 #FMB071Link4 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p4176831595 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p4187986985 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p420546953 #FMB071Link7 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p4223108330 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p427107840 #FMB071Link13 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p4287093760 #FMB071Link4 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p447295488 #FMB071Link13 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p451121664 #FMB071Link2 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p491150848 #FMB071Link12 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p528516096 #FMB071Link5 #buttons-button-navigation-default {
+    background-image: none;
+    background-color: rgba(246, 248, 252, 0.13);
+    border-left-width: 2px;
+    border-left-color: #edaa42;
+}
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p536859648 #FMB071Link15 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p549376881 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p550214501 #FMB071Link6 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p553681774 #FMB071Link3 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p556005888 #FMB071Link13 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p5585921 #FMB071Link16 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p575271936 #FMB071Link4 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p618639576 #FMB071Link12 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p626673687 #FMB071Link4 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p695357276 #FMB071Link11 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p697536794 #FMB071Link15 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p756655104 #FMB071Link3 #buttons-button-navigation-default {
+    background-image: none;
+    background-color: rgba(246, 248, 252, 0.13);
+    border-left-width: 2px;
+    border-left-color: #edaa42;
+}
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p776329728 #FMB071Link13 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p789393917 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p811968000 #FMB071Link12 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p837367296 #FMB071Link10 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p843741714 #FMB071Link5 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p869045560 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p912716394 #FMB071Link6 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p922320355 #FMB071Link1 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p96596720 #FMB071Link8 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-p983661492 #FMB071Link11 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2164393008 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2176386123 #FMB071Link11 #buttons-button-navigation-default {
+    background-image: none;
+    background-color: rgba(246, 248, 252, 0.13);
+    border-left-width: 2px;
+    border-left-color: #edaa42;
+}
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2208928113 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2254266112 #FMB071Link2 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2263778048 #FMB071Link5 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2295196698 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2331347200 #FMB071Link9 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2362315008 #FMB071Link15 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2363450624 #FMB071Link12 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2384599296 #FMB071Link6 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2396461475 #FMB071Link8 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2414898432 #FMB071Link0 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2414990592 #FMB071Link12 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2423941888 #FMB071Link14 #buttons-button-navigation-default {
+    background-image: none;
+    background-color: rgba(246, 248, 252, 0.13);
+    border-left-width: 2px;
+    border-left-color: #edaa42;
+}
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2440596575 #FMB071Link8 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2479473920 #FMB071Link13 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2517621123 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2520212446 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2536886662 #FMB071Link15 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2544975636 #FMB071Link15 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2549231360 #FMB071Link2 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2590779850 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2598177314 #FMB071Link7 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2612858766 #FMB071Link13 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2613780578 #FMB071Link11 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2623035648 #FMB071Link16 #buttons-button-navigation-default {
+    background-image: none;
+    background-color: rgba(246, 248, 252, 0.13);
+    border-left-width: 2px;
+    border-left-color: #edaa42;
+}
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2635223808 #FMB071Link14 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2658229504 #FMB071Link14 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2693440336 #FMB071Link11 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2703606784 #FMB071Link13 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2766066688 #FMB071Link9 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2793790976 #FMB071Link0 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2812092275 #FMB071Link3 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2891733322 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u2948499227 #FMB071Link11 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3028710912 #FMB071Link12 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3051211776 #FMB071Link14 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3054852555 #FMB071Link15 #buttons-button-navigation-default {
+    background-image: none;
+    background-color: rgba(246, 248, 252, 0.13);
+    border-left-width: 2px;
+    border-left-color: #edaa42;
+}
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3076437395 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3079849686 #FMB071Link5 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3128627712 #FMB071Link7 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3142970071 #FMB071Link6 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3145537024 #FMB071Link16 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3146487296 #FMB071Link0 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3173313024 #FMB071Link12 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3199626752 #FMB071Link1 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3247718912 #FMB071Link7 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3273582080 #FMB071Link9 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3285910016 #FMB071Link4 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3313366528 #FMB071Link15 #buttons-button-navigation-default {
+    background-image: none;
+    background-color: rgba(246, 248, 252, 0.13);
+    border-left-width: 2px;
+    border-left-color: #edaa42;
+}
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3325974161 #FMB071Link6 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3334350336 #FMB071Link4 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3336692955 #FMB071Link8 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3341950045 #FMB071Link8 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3348350123 #FMB071Link15 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3392583224 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3400157696 #FMB071Link7 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3407429587 #FMB071Link3 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3465891281 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3474336938 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3528381947 #FMB071Link6 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3574631936 #FMB071Link11 #buttons-button-navigation-default {
+    background-image: none;
+    background-color: rgba(246, 248, 252, 0.13);
+    border-left-width: 2px;
+    border-left-color: #edaa42;
+}
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3638344704 #FMB071Link12 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3643682816 #FMB071Link16 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3671413248 #FMB071Link0 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3689735168 #FMB071Link3 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3709978112 #FMB071Link14 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3720182567 #FMB071Link14 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3722354342 #FMB071Link14 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3728036352 #FMB071Link8 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3754068480 #FMB071Link5 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3755238400 #FMB071Link14 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3795081809 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3849794560 #FMB071Link13 #buttons-button-navigation-default {
+    background-image: none;
+    background-color: rgba(246, 248, 252, 0.13);
+    border-left-width: 2px;
+    border-left-color: #edaa42;
+}
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3857317376 #FMB071Link0 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3920332920 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3930416128 #FMB071Link0 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3932303360 #FMB071Link0 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3936553472 #FMB071Link13 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3946954240 #FMB071Link16 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3979388416 #FMB071Link9 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u3992489936 #FMB071Link1 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u4025415133 #FMB071Link5 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u4045698048 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u4049842854 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u4072482863 #FMB071Link1 #buttons-button-navigation-default {
+    background-image: none;
+    background-color: rgba(246, 248, 252, 0.13);
+    border-left-width: 2px;
+    border-left-color: #edaa42;
+}
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u4113948160 #FMB071Link12 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u4115160284 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u4119577600 #FMB071Link5 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u4123845667 #FMB071Link6 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u4148671628 #FMB071Link7 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u4155998042 #FMB071Link4 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u4176831595 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u4187986985 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u4223108330 #FMB071Link17 #buttons-button-navigation-default,
+#FMBClassicSidebar #FMBClassicLinks #FMB070NavOrder.fmb071-u4287093760 #FMB071Link4 #buttons-button-navigation-default,
+#MainNav #FMBClassicSidebar #ManagingNationButtons #buttons-button-navigation-default.navigation-tab-portal-default-active-true,
+#MainNav #FMBClassicSidebar #UnemployedButtons #buttons-button-navigation-default.navigation-tab-portal-default-active-true {
+    background-image: none;
+    background-color: rgba(246, 248, 252, 0.13);
+    border-left-width: 2px;
+    border-left-color: #edaa42;
+}
+#MainNav #FMBFoundationUnemployedNav.fmb087-sidebar .fmb-foundation-active #buttons-button-navigation-default {
+    background-image: none;
+    background-color: rgba(246, 248, 252, 0.13);
+    border-left-width: 2px;
+    border-left-color: #edaa42;
+}
+
+/* Scouting and coaching notes on the full player profile. */
+#PlayerReportHeaderGradient #report-player-full-header-max-body {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    min-width: 0;
+}
+#PlayerReportHeaderGradient #report-player-full-header-max-body > #PhoneSwitch {
+    width: auto;
+    min-width: 0;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-self: center;
+}
+#PlayerReportHeaderGradient #report-player-full-header-max-body .fmb088-header-identity {
+    min-width: 155px;
+    margin-right: 8px;
+}
+#PlayerReportHeaderGradient #report-player-full-header-max-body .fmb088-header-actions {
+    margin-right: 6px;
+}
+#PlayerReportHeaderGradient #report-player-full-header-max-body .fmb088-header-details {
+    flex-basis: 64%;
+    min-width: 0;
+}
+#PlayerReportHeaderGradient #report-player-full-header-max-body .fmb088-header-detail {
+    width: auto;
+    min-width: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+#PlayerReportHeaderGradient #FMBProfileReportNotes {
+    flex-basis: 37%;
+    flex-shrink: 1;
+    flex-grow: 0;
+    min-width: 0;
+    height: 88%;
+    max-height: 156px;
+    min-height: 0;
+    margin-left: 8px;
+    margin-right: 8px;
+    align-self: center;
+    overflow: hidden;
+}
+#FMBProfileReportNotes .fmb-notes-fill,
+#FMBProfileReportNotes .fmb-notes-columns {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    min-height: 0;
+    min-width: 0;
+    align-self: stretch;
+}
+#FMBProfileReportNotes .fmb-notes-columns {
+    flex-direction: row;
+    align-items: stretch;
+}
+#FMBProfileReportNotes .fmb-notes-column {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+    min-height: 0;
+    align-self: stretch;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.032);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+#FMBProfileReportNotes .fmb-notes-pros { margin-right: 3px; }
+#FMBProfileReportNotes .fmb-notes-cons { margin-left: 3px; }
+#FMBProfileReportNotes .fmb-notes-heading {
+    height: 23px;
+    flex-shrink: 0;
+    padding-left: 6px;
+}
+#FMBProfileReportNotes .fmb-notes-icon {
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+}
+#FMBProfileReportNotes .fmb-notes-pros .fmb-notes-heading { background-color: rgba(72, 175, 98, 0.13); }
+#FMBProfileReportNotes .fmb-notes-cons .fmb-notes-heading { background-color: rgba(208, 93, 89, 0.12); }
+#FMBProfileReportNotes .fmb-notes-pros .fmb-notes-caption { color: #a2dab0; }
+#FMBProfileReportNotes .fmb-notes-cons .fmb-notes-caption { color: #ebb2ae; }
+#FMBProfileReportNotes .fmb-notes-pros .fmb-notes-icon { -unity-background-image-tint-color: #a2dab0; }
+#FMBProfileReportNotes .fmb-notes-cons .fmb-notes-icon { -unity-background-image-tint-color: #ebb2ae; }
+#FMBProfileReportNotes .fmb-notes-list {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-height: 0;
+    min-width: 0;
+    align-self: stretch;
+}
+#FMBProfileReportNotes .fmb-notes-list #DescriptionLabel {
+    flex-shrink: 1;
+    min-width: 0;
+    white-space: normal;
+}
+#FMBProfileReportNotes .fmb-notes-empty {
+    justify-content: center;
+    flex-grow: 1;
+    align-self: center;
+}
+/* The native small breakpoint has a compact identity row. Put the notes under
+   it so the report columns share the full width beside the portrait. */
+#PlayerReportHeaderGradient.report-player-full-header-min-type-player #report-player-full-header-max.fmb069-id-row,
+.report-player-full-header-min-type-player #PlayerReportHeaderGradient #report-player-full-header-max.fmb069-id-row,
+#PlayerReportHeaderGradient .report-player-full-header-min-type-player #report-player-full-header-max.fmb069-id-row,
+#PlayerReportHeaderGradient #report-player-full-header-max.fmb069-id-row.report-player-full-header-min-type-player {
+    height: 174px;
+    min-height: 174px;
+    max-height: 174px;
+}
+#PlayerReportHeaderGradient.report-player-full-header-min-type-player #report-player-full-header-max-body,
+.report-player-full-header-min-type-player #PlayerReportHeaderGradient #report-player-full-header-max-body,
+#PlayerReportHeaderGradient .report-player-full-header-min-type-player #report-player-full-header-max-body,
+#PlayerReportHeaderGradient #report-player-full-header-max-body.report-player-full-header-min-type-player {
+    flex-direction: column;
+    align-items: stretch;
+}
+#PlayerReportHeaderGradient.report-player-full-header-min-type-player #report-player-full-header-max-body > #PhoneSwitch,
+.report-player-full-header-min-type-player #PlayerReportHeaderGradient #report-player-full-header-max-body > #PhoneSwitch,
+#PlayerReportHeaderGradient .report-player-full-header-min-type-player #report-player-full-header-max-body > #PhoneSwitch {
+    width: 100%;
+    min-height: 48px;
+    align-self: stretch;
+}
+#PlayerReportHeaderGradient.report-player-full-header-min-type-player #FMBProfileReportNotes,
+.report-player-full-header-min-type-player #PlayerReportHeaderGradient #FMBProfileReportNotes,
+#PlayerReportHeaderGradient .report-player-full-header-min-type-player #FMBProfileReportNotes {
+    width: auto;
+    height: 78px;
+    min-height: 78px;
+    max-height: 78px;
+    flex-basis: auto;
+    flex-grow: 0;
+    align-self: stretch;
+    margin-left: 2px;
+    margin-bottom: 3px;
+}
+/* End full player profile notes. */

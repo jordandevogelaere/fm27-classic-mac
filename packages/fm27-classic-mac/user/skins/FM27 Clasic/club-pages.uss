@@ -1,0 +1,58 @@
+/* Right column only: the second section follows the last line of the bio. */
+.fmb087-club-background > .fmb101-club-bio,
+.fmb087-club-background > .fmb101-club-policy {
+    height: auto; min-height: 0; flex-basis: auto; flex-grow: 0; flex-shrink: 0;
+    align-self: stretch;
+}
+.fmb087-club-background .fmb101-club-copy {
+    flex-grow: 1; flex-basis: 0; min-width: 0; max-width: none;
+}
+.fmb087-club-background .fmb101-policy-divider { display: none; }
+.fmb087-club-background > .fmb101-club-policy { margin-top: 12px; }
+
+/* The supporter key and stadium form one group; figures on the right stay in their column. */
+#general-info-container > #spread-container.fmb069-fan-bowl-legend {
+    justify-content: flex-start; align-items: center; padding-left: 16px;
+}
+#spread-container > #percentage.fmb069-legend {
+    flex-grow: 0; flex-shrink: 1; flex-basis: auto;
+    width: 142px; min-width: 118px; max-width: 142px; margin-right: 16px;
+}
+#spread-container > #chart-container.fmb069-bowl {
+    flex-grow: 0; flex-shrink: 0;
+    width: 220px; height: 254px; min-height: 254px; max-height: 254px;
+    margin: 0; border-radius: 38px; overflow: hidden;
+}
+#spread-container > #chart-container > #FMB069StadiumPitch.fmb069-seats { bottom: -1px; }
+
+/* Lower staff navigation, shared by U21, U18 and Staff. */
+.fmb092-grid-6190f0803e20a8 #TabbedGridLayoutElement .fmb-lower-tabs050-row {
+    padding-left: 15px;
+}
+
+/* League Stages: size relative to the table, not the viewport or fixtures sidebar. */
+#BindingExpect_StagesBlock #BottomBarGridVisible,
+#BottomBarGridVisible > BindableSwitchElement,
+#BottomBarGridVisible #DomesticLeague,
+#BottomBarGridVisible #DomesticLeague > .grid-content-wrapper,
+#BottomBarGridVisible #DomesticLeague > FixedAspectGridLayoutElement,
+#BottomBarGridVisible #DomesticLeague > .grid-content-wrapper > FixedAspectGridLayoutElement,
+#BottomBarGridVisible #DomesticLeague FixedAspectGridLayoutElement > .unity-scroll-view,
+#BottomBarGridVisible #DomesticLeague FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-and-vertical-scroll-container,
+#BottomBarGridVisible #DomesticLeague FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-and-vertical-scroll-container > .unity-scroll-view__content-viewport,
+#BottomBarGridVisible #DomesticLeague FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-and-vertical-scroll-container > .unity-scroll-view__content-viewport > .unity-scroll-view__content-container,
+#BottomBarGridVisible #DomesticLeague FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-viewport,
+#BottomBarGridVisible #DomesticLeague FixedAspectGridLayoutElement > .unity-scroll-view > .unity-scroll-view__content-viewport > .unity-scroll-view__content-container,
+#BottomBarGridVisible #DomesticLeague #GridLayoutElementContent {
+    width: 100%; min-width: 100%; align-self: stretch;
+}
+#DomesticLeague #GridLayoutElementContent > #TeamStats,
+#DomesticLeague #GridLayoutElementContent > #PlayerStats,
+#DomesticLeague #GridLayoutElementContent > #CompetitionSiteInsAndOuts,
+#DomesticLeague #GridLayoutElementContent > #CompetitionSiteAboutRules {
+    min-width: 25%; max-width: 25%;
+}
+#DomesticLeague #GridLayoutElementContent > #TeamStats { margin-left: 0; translate: 0 0; padding-left: 0; padding-right: 7.5px; }
+#DomesticLeague #GridLayoutElementContent > #PlayerStats { margin-left: -296px; translate: 100% 0; padding-left: 2.5px; padding-right: 5px; }
+#DomesticLeague #GridLayoutElementContent > #CompetitionSiteInsAndOuts { margin-left: -592px; translate: 200% 0; padding-left: 5px; padding-right: 2.5px; }
+#DomesticLeague #GridLayoutElementContent > #CompetitionSiteAboutRules { margin-left: -888px; translate: 300% 0; padding-left: 7.5px; padding-right: 0; }

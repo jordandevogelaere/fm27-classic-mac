@@ -1,0 +1,167 @@
+/* The dedicated Squad Depth pitch and the Squad Planner report overview. */
+
+#FMBC_SquadPlannerLink_TeamReportSquadDepth_f9efbbf2 #NonPhoneLayout #ReportHeader #ContentFrame > BindableSwitchElement,
+#TeamReportSquadDepth #NonPhoneLayout #ReportHeader #ContentFrame > BindableSwitchElement,
+#FMBC_SquadPlannerLink_TeamReportSquadDepth_f9efbbf2 #NonPhoneLayout #ReportHeader #ContentFrame > SIStyleSetter > TemplateContainer,
+#TeamReportSquadDepth #NonPhoneLayout #ReportHeader #ContentFrame > SIStyleSetter > TemplateContainer,
+#FMBC_SquadPlannerLink_TeamReportSquadDepth_f9efbbf2 #NonPhoneLayout #ReportHeader #ContentFrame .layout-layout-divider-solid-horizontal,
+#TeamReportSquadDepth #NonPhoneLayout #ReportHeader #ContentFrame .layout-layout-divider-solid-horizontal,
+#FMBC_SquadPlannerLink_TeamReportSquadDepth_f9efbbf2 #NonPhoneLayout #ReportHeader #MainFrame #layout-divider-solid-vertical-3,
+#TeamReportSquadDepth #NonPhoneLayout #ReportHeader #MainFrame #layout-divider-solid-vertical-3,
+#FMBC_DataHubLink_TeamReportSquadDepth_6b53a121 #NonPhoneLayout #ReportHeader #ContentFrame > BindableSwitchElement,
+#FMBC_DataHubLink_TeamReportSquadDepth_d9c37c1f #NonPhoneLayout #ReportHeader #ContentFrame > BindableSwitchElement,
+#FMBC_SquadPlannerLink_TeamReportSite_1031ec1e #NonPhoneLayout #ReportHeader #ContentFrame > BindableSwitchElement,
+#FMBC_SquadPlannerLink_TeamReportTeamAnalysis_a26c8df2 #NonPhoneLayout #ReportHeader #ContentFrame > BindableSwitchElement,
+#FMBC_DataHubLink_TeamReportSquadDepth_6b53a121 #NonPhoneLayout #ReportHeader #ContentFrame > SIStyleSetter > TemplateContainer,
+#FMBC_DataHubLink_TeamReportSquadDepth_d9c37c1f #NonPhoneLayout #ReportHeader #ContentFrame > SIStyleSetter > TemplateContainer,
+#FMBC_SquadPlannerLink_TeamReportSite_1031ec1e #NonPhoneLayout #ReportHeader #ContentFrame > SIStyleSetter > TemplateContainer,
+#FMBC_SquadPlannerLink_TeamReportTeamAnalysis_a26c8df2 #NonPhoneLayout #ReportHeader #ContentFrame > SIStyleSetter > TemplateContainer,
+#FMBC_DataHubLink_TeamReportSquadDepth_6b53a121 #NonPhoneLayout #ReportHeader #ContentFrame .layout-layout-divider-solid-horizontal,
+#FMBC_DataHubLink_TeamReportSquadDepth_d9c37c1f #NonPhoneLayout #ReportHeader #ContentFrame .layout-layout-divider-solid-horizontal,
+#FMBC_SquadPlannerLink_TeamReportSite_1031ec1e #NonPhoneLayout #ReportHeader #ContentFrame .layout-layout-divider-solid-horizontal,
+#FMBC_SquadPlannerLink_TeamReportTeamAnalysis_a26c8df2 #NonPhoneLayout #ReportHeader #ContentFrame .layout-layout-divider-solid-horizontal,
+#FMBC_DataHubLink_TeamReportSquadDepth_6b53a121 #NonPhoneLayout #ReportHeader #MainFrame #layout-divider-solid-vertical-3,
+#FMBC_DataHubLink_TeamReportSquadDepth_d9c37c1f #NonPhoneLayout #ReportHeader #MainFrame #layout-divider-solid-vertical-3,
+#FMBC_SquadPlannerLink_TeamReportSite_1031ec1e #NonPhoneLayout #ReportHeader #MainFrame #layout-divider-solid-vertical-3,
+#FMBC_SquadPlannerLink_TeamReportTeamAnalysis_a26c8df2 #NonPhoneLayout #ReportHeader #MainFrame #layout-divider-solid-vertical-3 {
+    display: none;
+}
+
+#FMBC_SquadPlannerLink_TeamReportSquadDepth_f9efbbf2 #NonPhoneLayout #ReportHeader #ContentFrame,
+#TeamReportSquadDepth #NonPhoneLayout #ReportHeader #ContentFrame,
+#FMBC_SquadPlannerLink_TeamReportSquadDepth_f9efbbf2 #NonPhoneLayout #ReportHeader #ContentFrame > SIStyleSetter,
+#TeamReportSquadDepth #NonPhoneLayout #ReportHeader #ContentFrame > SIStyleSetter,
+#FMBC_DataHubLink_TeamReportSquadDepth_6b53a121 #NonPhoneLayout #ReportHeader #ContentFrame,
+#FMBC_DataHubLink_TeamReportSquadDepth_d9c37c1f #NonPhoneLayout #ReportHeader #ContentFrame,
+#FMBC_SquadPlannerLink_TeamReportSite_1031ec1e #NonPhoneLayout #ReportHeader #ContentFrame,
+#FMBC_SquadPlannerLink_TeamReportTeamAnalysis_a26c8df2 #NonPhoneLayout #ReportHeader #ContentFrame,
+#FMBC_DataHubLink_TeamReportSquadDepth_6b53a121 #NonPhoneLayout #ReportHeader #ContentFrame > SIStyleSetter,
+#FMBC_DataHubLink_TeamReportSquadDepth_d9c37c1f #NonPhoneLayout #ReportHeader #ContentFrame > SIStyleSetter,
+#FMBC_SquadPlannerLink_TeamReportSite_1031ec1e #NonPhoneLayout #ReportHeader #ContentFrame > SIStyleSetter,
+#FMBC_SquadPlannerLink_TeamReportTeamAnalysis_a26c8df2 #NonPhoneLayout #ReportHeader #ContentFrame > SIStyleSetter {
+    justify-content: center;
+}
+
+#FMBC_SquadPlannerLink_TeamReportSquadDepth_f9efbbf2 #NonPhoneLayout #ReportHeader #LogoFrame #TeamIcon64px--unpacked,
+#TeamReportSquadDepth #NonPhoneLayout #ReportHeader #LogoFrame #TeamIcon64px--unpacked,
+#FMBC_DataHubLink_TeamReportSquadDepth_6b53a121 #NonPhoneLayout #ReportHeader #LogoFrame #TeamIcon64px--unpacked,
+#FMBC_DataHubLink_TeamReportSquadDepth_d9c37c1f #NonPhoneLayout #ReportHeader #LogoFrame #TeamIcon64px--unpacked,
+#FMBC_SquadPlannerLink_TeamReportSite_1031ec1e #NonPhoneLayout #ReportHeader #LogoFrame #TeamIcon64px--unpacked,
+#FMBC_SquadPlannerLink_TeamReportTeamAnalysis_a26c8df2 #NonPhoneLayout #ReportHeader #LogoFrame #TeamIcon64px--unpacked {
+    translate: 0 -4px;
+}
+
+#FMBC_SquadPlannerLink_TeamReportSquadDepth_f9efbbf2 #NonPhoneLayout #ReportHeader #MainFrame > *,
+#TeamReportSquadDepth #NonPhoneLayout #ReportHeader #MainFrame > *,
+#FMBC_DataHubLink_TeamReportSquadDepth_6b53a121 #NonPhoneLayout #ReportHeader #MainFrame > *,
+#FMBC_DataHubLink_TeamReportSquadDepth_d9c37c1f #NonPhoneLayout #ReportHeader #MainFrame > *,
+#FMBC_SquadPlannerLink_TeamReportSite_1031ec1e #NonPhoneLayout #ReportHeader #MainFrame > *,
+#FMBC_SquadPlannerLink_TeamReportTeamAnalysis_a26c8df2 #NonPhoneLayout #ReportHeader #MainFrame > * {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    min-width: 0;
+    padding-right: 12px;
+}
+
+#FMBC_SquadPlannerLink_TeamReportSquadDepth_f9efbbf2 #NonPhoneLayout #ReportHeader #MainFrame,
+#TeamReportSquadDepth #NonPhoneLayout #ReportHeader #MainFrame,
+#FMBC_DataHubLink_TeamReportSquadDepth_6b53a121 #NonPhoneLayout #ReportHeader #MainFrame,
+#FMBC_DataHubLink_TeamReportSquadDepth_d9c37c1f #NonPhoneLayout #ReportHeader #MainFrame,
+#FMBC_SquadPlannerLink_TeamReportSite_1031ec1e #NonPhoneLayout #ReportHeader #MainFrame,
+#FMBC_SquadPlannerLink_TeamReportTeamAnalysis_a26c8df2 #NonPhoneLayout #ReportHeader #MainFrame {
+    align-items: stretch;
+}
+
+#FMBC_SquadPlannerLink_TeamReportSquadDepth_f9efbbf2 #NonPhoneLayout #ReportHeader #MainFrame #league,
+#TeamReportSquadDepth #NonPhoneLayout #ReportHeader #MainFrame #league,
+#FMBC_SquadPlannerLink_TeamReportSquadDepth_f9efbbf2 #NonPhoneLayout #ReportHeader #MainFrame #WorldRanking,
+#TeamReportSquadDepth #NonPhoneLayout #ReportHeader #MainFrame #WorldRanking,
+#FMBC_SquadPlannerLink_TeamReportSquadDepth_f9efbbf2 #NonPhoneLayout #ReportHeader #MainFrame #club-reputation,
+#TeamReportSquadDepth #NonPhoneLayout #ReportHeader #MainFrame #club-reputation,
+#FMBC_SquadPlannerLink_TeamReportSquadDepth_f9efbbf2 #NonPhoneLayout #ReportHeader #MainFrame #reported-by > .row-direction-normal,
+#TeamReportSquadDepth #NonPhoneLayout #ReportHeader #MainFrame #reported-by > .row-direction-normal,
+#FMBC_SquadPlannerLink_TeamReportSquadDepth_f9efbbf2 #NonPhoneLayout #ReportHeader #MainFrame #analysis-staff,
+#TeamReportSquadDepth #NonPhoneLayout #ReportHeader #MainFrame #analysis-staff,
+#FMBC_DataHubLink_TeamReportSquadDepth_6b53a121 #NonPhoneLayout #ReportHeader #MainFrame #league,
+#FMBC_DataHubLink_TeamReportSquadDepth_d9c37c1f #NonPhoneLayout #ReportHeader #MainFrame #league,
+#FMBC_SquadPlannerLink_TeamReportSite_1031ec1e #NonPhoneLayout #ReportHeader #MainFrame #league,
+#FMBC_SquadPlannerLink_TeamReportTeamAnalysis_a26c8df2 #NonPhoneLayout #ReportHeader #MainFrame #league,
+#FMBC_DataHubLink_TeamReportSquadDepth_6b53a121 #NonPhoneLayout #ReportHeader #MainFrame #WorldRanking,
+#FMBC_DataHubLink_TeamReportSquadDepth_d9c37c1f #NonPhoneLayout #ReportHeader #MainFrame #WorldRanking,
+#FMBC_SquadPlannerLink_TeamReportSite_1031ec1e #NonPhoneLayout #ReportHeader #MainFrame #WorldRanking,
+#FMBC_SquadPlannerLink_TeamReportTeamAnalysis_a26c8df2 #NonPhoneLayout #ReportHeader #MainFrame #WorldRanking,
+#FMBC_DataHubLink_TeamReportSquadDepth_6b53a121 #NonPhoneLayout #ReportHeader #MainFrame #club-reputation,
+#FMBC_DataHubLink_TeamReportSquadDepth_d9c37c1f #NonPhoneLayout #ReportHeader #MainFrame #club-reputation,
+#FMBC_SquadPlannerLink_TeamReportSite_1031ec1e #NonPhoneLayout #ReportHeader #MainFrame #club-reputation,
+#FMBC_SquadPlannerLink_TeamReportTeamAnalysis_a26c8df2 #NonPhoneLayout #ReportHeader #MainFrame #club-reputation,
+#FMBC_DataHubLink_TeamReportSquadDepth_6b53a121 #NonPhoneLayout #ReportHeader #MainFrame #reported-by > .row-direction-normal,
+#FMBC_DataHubLink_TeamReportSquadDepth_d9c37c1f #NonPhoneLayout #ReportHeader #MainFrame #reported-by > .row-direction-normal,
+#FMBC_SquadPlannerLink_TeamReportSite_1031ec1e #NonPhoneLayout #ReportHeader #MainFrame #reported-by > .row-direction-normal,
+#FMBC_SquadPlannerLink_TeamReportTeamAnalysis_a26c8df2 #NonPhoneLayout #ReportHeader #MainFrame #reported-by > .row-direction-normal,
+#FMBC_DataHubLink_TeamReportSquadDepth_6b53a121 #NonPhoneLayout #ReportHeader #MainFrame #analysis-staff,
+#FMBC_DataHubLink_TeamReportSquadDepth_d9c37c1f #NonPhoneLayout #ReportHeader #MainFrame #analysis-staff,
+#FMBC_SquadPlannerLink_TeamReportSite_1031ec1e #NonPhoneLayout #ReportHeader #MainFrame #analysis-staff,
+#FMBC_SquadPlannerLink_TeamReportTeamAnalysis_a26c8df2 #NonPhoneLayout #ReportHeader #MainFrame #analysis-staff {
+    margin-left: 0;
+}
+
+#FMBC_SquadPlannerLink_TeamReportSquadDepth_f9efbbf2 #NonPhoneLayout #ReportHeader #MainFrame .justify-content-space-evenly,
+#TeamReportSquadDepth #NonPhoneLayout #ReportHeader #MainFrame .justify-content-space-evenly,
+#FMBC_SquadPlannerLink_TeamReportSquadDepth_f9efbbf2 #NonPhoneLayout #ReportHeader #MainFrame .justify-content-space-between,
+#TeamReportSquadDepth #NonPhoneLayout #ReportHeader #MainFrame .justify-content-space-between,
+#FMBC_SquadPlannerLink_TeamReportSquadDepth_f9efbbf2 #NonPhoneLayout #ReportHeader #MainFrame > #Frame > #Frame.align-items-start,
+#TeamReportSquadDepth #NonPhoneLayout #ReportHeader #MainFrame > #Frame > #Frame.align-items-start,
+#FMBC_DataHubLink_TeamReportSquadDepth_6b53a121 #NonPhoneLayout #ReportHeader #MainFrame .justify-content-space-evenly,
+#FMBC_DataHubLink_TeamReportSquadDepth_d9c37c1f #NonPhoneLayout #ReportHeader #MainFrame .justify-content-space-evenly,
+#FMBC_SquadPlannerLink_TeamReportSite_1031ec1e #NonPhoneLayout #ReportHeader #MainFrame .justify-content-space-evenly,
+#FMBC_SquadPlannerLink_TeamReportTeamAnalysis_a26c8df2 #NonPhoneLayout #ReportHeader #MainFrame .justify-content-space-evenly,
+#FMBC_DataHubLink_TeamReportSquadDepth_6b53a121 #NonPhoneLayout #ReportHeader #MainFrame .justify-content-space-between,
+#FMBC_DataHubLink_TeamReportSquadDepth_d9c37c1f #NonPhoneLayout #ReportHeader #MainFrame .justify-content-space-between,
+#FMBC_SquadPlannerLink_TeamReportSite_1031ec1e #NonPhoneLayout #ReportHeader #MainFrame .justify-content-space-between,
+#FMBC_SquadPlannerLink_TeamReportTeamAnalysis_a26c8df2 #NonPhoneLayout #ReportHeader #MainFrame .justify-content-space-between,
+#FMBC_DataHubLink_TeamReportSquadDepth_6b53a121 #NonPhoneLayout #ReportHeader #MainFrame > #Frame > #Frame.align-items-start,
+#FMBC_DataHubLink_TeamReportSquadDepth_d9c37c1f #NonPhoneLayout #ReportHeader #MainFrame > #Frame > #Frame.align-items-start,
+#FMBC_SquadPlannerLink_TeamReportSite_1031ec1e #NonPhoneLayout #ReportHeader #MainFrame > #Frame > #Frame.align-items-start,
+#FMBC_SquadPlannerLink_TeamReportTeamAnalysis_a26c8df2 #NonPhoneLayout #ReportHeader #MainFrame > #Frame > #Frame.align-items-start {
+    justify-content: center;
+}
+
+#FMBC_SquadPlannerLink_TeamReportSquadDepth_f9efbbf2 #NonPhoneLayout #ReportHeader #MainFrame .body-xs-strong,
+#TeamReportSquadDepth #NonPhoneLayout #ReportHeader #MainFrame .body-xs-strong,
+#FMBC_DataHubLink_TeamReportSquadDepth_6b53a121 #NonPhoneLayout #ReportHeader #MainFrame .body-xs-strong,
+#FMBC_DataHubLink_TeamReportSquadDepth_d9c37c1f #NonPhoneLayout #ReportHeader #MainFrame .body-xs-strong,
+#FMBC_SquadPlannerLink_TeamReportSite_1031ec1e #NonPhoneLayout #ReportHeader #MainFrame .body-xs-strong,
+#FMBC_SquadPlannerLink_TeamReportTeamAnalysis_a26c8df2 #NonPhoneLayout #ReportHeader #MainFrame .body-xs-strong {
+    margin-bottom: 4px;
+}
+
+#FMBC_SquadPlannerLink_TeamReportSquadDepth_f9efbbf2 #NonPhoneLayout #Card-frame > #Border.figma-base-tool-template-border,
+#TeamReportSquadDepth #NonPhoneLayout #Card-frame > #Border.figma-base-tool-template-border,
+#FMBC_DataHubLink_TeamReportSquadDepth_6b53a121 #NonPhoneLayout #Card-frame > #Border.figma-base-tool-template-border,
+#FMBC_DataHubLink_TeamReportSquadDepth_d9c37c1f #NonPhoneLayout #Card-frame > #Border.figma-base-tool-template-border {
+    display: none;
+}
+
+#FMBC_SquadPlannerLink_TeamReportSquadDepth_f9efbbf2 #SquadDepth-Content #Frame.border-color-layout-modules-block-border-colour,
+#TeamReportSquadDepth #SquadDepth-Content #Frame.border-color-layout-modules-block-border-colour,
+#FMBC_DataHubLink_TeamReportSquadDepth_6b53a121 #SquadDepth-Content #Frame.border-color-layout-modules-block-border-colour,
+#FMBC_DataHubLink_TeamReportSquadDepth_d9c37c1f #SquadDepth-Content #Frame.border-color-layout-modules-block-border-colour {
+    border-width: 0;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+/* The dedicated Team and Opposition depth links open the same clean pitch. */
+
+#FMBC_DataHubLink_TeamReportFormationAnalysis_9d8133a6 #ReportHeader #TeamReport #SquadDepth,
+#FMBC_DataHubLink_TeamReportFormationAnalysis_e0db5fed #ReportHeader #TeamReport #SquadDepth,
+#FMBC_DataHubLink_TeamReportGoalAnalysis_aaeba8b1 #ReportHeader #TeamReport #SquadDepth,
+#FMBC_DataHubLink_TeamReportGoalAnalysis_de9585f4 #ReportHeader #TeamReport #SquadDepth,
+#FMBC_DataHubLink_TeamReportSetPieceAnalysis_6e62512f #ReportHeader #TeamReport #SquadDepth,
+#FMBC_DataHubLink_TeamReportSetPieceAnalysis_8675697e #ReportHeader #TeamReport #SquadDepth,
+#FMBC_DataHubLink_TeamReportSite_3dcd090b #ReportHeader #TeamReport #SquadDepth,
+#FMBC_DataHubLink_TeamReportSite_a89e14bd #ReportHeader #TeamReport #SquadDepth,
+#FMBC_DataHubLink_TeamReportTeamAnalysis_cf181039 #ReportHeader #TeamReport #SquadDepth,
+#FMBC_DataHubLink_TeamReportTeamAnalysis_ead5fac7 #ReportHeader #TeamReport #SquadDepth {
+    display: none;
+}

@@ -1,0 +1,45 @@
+/* FM24-style palette, first draft. Colours are approximations chosen by eye,
+   NOT sampled from FM24 screenshots yet. Original FM27 values in comments. */
+:root {
+  /* surfaces */
+  --colours-ui-base: #1c1d20;                       /* #16181d  page base */
+  --layout-modules-block-surface: #26282df2;        /* #0d0e11 @75%  panel fill; near-opaque to hide the swirl */
+
+  /* accent: purple -> blue */
+  --brand-theme-accent: #5aa0e6;                    /* #da71fe  section headings, figures */
+  --colours-brand-foundation-twilight: #2f6fb5;     /* #6e0fd7  active buttons (via --brand-theme-ui-base) */
+  --brand-theme-primary: #2f6fb5;                   /* #a300db  gradients */
+  --brand-theme-primary-soft: #5aa0e6;              /* #c20fff */
+  --brand-theme-primary-70: #2f6fb5b2;              /* #6e0fd7b2 */
+  --colours-brand-fm25-lilac: #6aa6e8;              /* #af78ff */
+  --colours-brand-highlight-pink-base: #6aa6e8;     /* #eb85ff */
+
+  /* tints */
+  --colours-brand-tints-horizon-alpha-20: #6aa6e833; /* #af78ff33 */
+  --colours-brand-tints-horizon-alpha-8: #6aa6e814;  /* #af78ff14 */
+  --horizon-alpha-8: #6aa6e814;                      /* #af78ff14 */
+  --data-tables-background-selected: #6aa6e859;      /* #af78ff59  selected table row */
+
+  /* remaining magenta / lilac -> blue (0.1.1) */
+  --brand-theme-primary-accent: #1f5fa8;            /* #c7005a  magenta end of button gradients */
+  --continue-button-default-background: #2f6fb5;    /* #e50f51  Continue button */
+  --colours-brand-tints-horizon-120: #8fbcee;       /* #c299ff */
+  --global-text-men-primary: #c5d9f2;               /* #d7c0fc */
+
+  /* navy -> neutral grey (0.1.1) */
+  --colours-brand-foundation-midnight: #131416;       /* #0a0f1e */
+  --colours-brand-foundation-midnight-base: #131416;  /* #0a0f1e */
+  --colours-brand-fm25-midnight: #131416;             /* #0a0f1e */
+  --colours-base-neutral-black: #131416;              /* #0a0f1e */
+  --midnight: #131416;                                /* #0a0f1e */
+  --midnight-alpha-80: #131416cc;                     /* #0a0f1ecc */
+  --midnight-alpha-65: #131416a6;                     /* #0a0f1ea6 */
+  --colours-brand-tints-midnight-65: #131416a6;       /* #0a0f1ea6 */
+  --colours-alpha-dark-alpha-56: #1314168f;           /* #0a0f1e8f */
+  --colours-ui-soft: #232427;                         /* #1e2129 */
+  --colours-brand-foundation-midnight-100: #2a2b2f;   /* #232735  menu tiles */
+  --colours-brand-fm25-midnight-60: #2a2b2f;          /* #232735 */
+  --colours-brand-foundation-midnight-60: #2a2b2f99;  /* #23273599 */
+  --layout-ui-tiles-light-background: #2a2b2f;        /* #232735 */
+  --colours-speak-to-background-dark: #0c0c0d;        /* #060912 */
+}
