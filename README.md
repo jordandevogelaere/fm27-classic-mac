@@ -54,7 +54,3 @@ The Windows skin ships as patches against the Windows game files of Steam build 
 5. Adds the skin's 127 catalog entries to the Mac catalog (`tools/port_catalog.py`).
 
 Rebuilding needs things that are not in this repository: the Windows skin installer, the original Windows game files for build 26385295, and a backup of the stock Mac game files. `tools/classic.sh` installs and restores on the Mac the port was built on.
-
-## Credits
-
-The Classic Skin is by FM Blog: <https://www.footballmanagerblog.org/p/fm27-classic-skin.html>. Football Manager 27 is by Sports Interactive.
